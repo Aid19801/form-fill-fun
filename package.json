@@ -5,7 +5,16 @@
   "dependencies": {
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-scripts": "2.1.3"
+    "react-scripts": "2.1.3",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2"
+  },
+  "devDependencies": {
+    "json-server": "^0.14.2",
+    "redux-devtools-extension": "^2.13.7"
   },
   "scripts": {
     "start": "react-scripts start",

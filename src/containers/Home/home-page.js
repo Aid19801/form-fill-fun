@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class VenueScreen extends Component {
+class HomePage extends Component {
   render() {
     return (
       <div>
-        This is the Venue Screen
+        This is the HomePage
       </div>
     )
   }
 }
 
-export default VenueScreen;
+export default HomePage;

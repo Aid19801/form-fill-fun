@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 
-export default class ActivityScreen extends Component {
+class ActivityScreen extends Component {
   render() {
     return (
       <div>
-        ActivityScreen
+        This is ActivityScreen
       </div>
     )
   }
 }
+
+
+export default ActivityScreen;
