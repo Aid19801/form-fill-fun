@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import NativeSelect from '@material-ui/core/NativeSelect';
-import UserInput from '../../components/UserInput';
+import { Header, UserInput } from '../../components';
 
 // lib funcs
 import presentAges from '../../lib/presentAges';
@@ -18,6 +18,7 @@ import presentAges from '../../lib/presentAges';
 // styles
 import styles from './material-styles';
 import './styles.css';
+
 
 class ActivityScreen extends Component {
 
@@ -93,7 +94,7 @@ class ActivityScreen extends Component {
       <div className="homepage">
 
         <div className="content-card">
-          <div className="header">header</div>
+          <Header />
           <div className="main-body">
             <h1 className="title">About Your Activity</h1>
 

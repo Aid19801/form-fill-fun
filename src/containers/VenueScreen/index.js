@@ -7,7 +7,7 @@ import * as actions from './constants';
 // material ui components
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import { UserInput } from '../../components';
+import { UserInput, Header } from '../../components';
 
 // styles
 import styles from './material-styles';
@@ -27,6 +27,7 @@ class VenueScreen extends Component {
       streetName: '',
       town: '',
       fieldsComplete: false,
+      suggestions: [],
     }
   }
 
@@ -37,6 +38,7 @@ class VenueScreen extends Component {
   handleInputs = (e) => {
     this.props.updateStateUserIsInputtingData();
     this.setState({ [e.target.name]: e.target.value })
+    this.searchForPlace();
   }
 
   checkFieldsAreFilled = () => {
@@ -74,6 +76,20 @@ class VenueScreen extends Component {
     }
   }
 
+
+  searchForPlace = () => {
+    const { placeName, buildingName } = this.state;
+    let matchedObject = {};
+    fetch('http://localhost:3001/addresses')
+      .then(res => res.json())
+      .then(arr => {
+
+        matchedObject = arr.filter(obj =>  obj.buildingUnit === '500');
+        console.log('matched: ', matchedObject);
+      })
+      .catch(err => err);
+  }
+
   render() {
   
     const { classes } = this.props;
@@ -82,7 +98,7 @@ class VenueScreen extends Component {
       <div className="homepage">
 
         <div className="content-card">
-          <div className="header">header</div>
+          <Header />
           <div className="main-body">
             <h1 className="title">Add The Address</h1>
             <Button className={classes.button} variant="contained" color="primary" onClick={null}>Copy from existing activity</Button>
