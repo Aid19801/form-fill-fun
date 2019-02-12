@@ -1,16 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, withRouter} from 'react-router-dom';
 
 import * as actions from './constants';
 
 // material ui components
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Input from '@material-ui/core/Input';
-
-// lib funcs
-// import findAddresses from '../../lib/findAddresses';
+import { UserInput } from '../../components';
 
 // styles
 import styles from './material-styles';
@@ -22,7 +19,6 @@ class VenueScreen extends Component {
     super(props)
     this.state = {
       value: '',
-      suggestions: [],
       placeName: '',
       postcode: '',
       buildingUnit: '',
@@ -30,6 +26,7 @@ class VenueScreen extends Component {
       streetNumber: '',
       streetName: '',
       town: '',
+      fieldsComplete: false,
     }
   }
 
@@ -38,22 +35,43 @@ class VenueScreen extends Component {
   }
 
   handleInputs = (e) => {
+    this.props.updateStateUserIsInputtingData();
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  checkFieldsAreFilled = () => {
+    // take everything from state
+    const { placeName, postcode,
+      streetNumber, streetName, town } = this.state;
+
+    // check these are NOT incomplete before user can proceed:
+    if (!placeName || !postcode || !streetNumber || !streetName || !town) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   saveVenueData = () => {
+    let isReady = this.checkFieldsAreFilled();
     // take everything from state
     const { placeName, postcode, buildingUnit, buildingName,
-    streetNumber, streetName, town } = this.state;
+    streetNumber, streetName, town, fieldsComplete } = this.state;
 
     // pop it in fresh object
     let venueData = {
       placeName, postcode, buildingUnit, buildingName,
     streetNumber, streetName, town,
     }
-    
-    // pop in the store
-    this.props.saveVenueData(venueData);
+
+    if (!isReady) {
+      alert('Please Check Fields Are Complete');
+      return this.props.history.push('/venue');
+    } else {
+      // pop it in the store 
+      this.props.saveVenueData(venueData);
+      this.props.history.push('/confirmation');
+    }
   }
 
   render() {
@@ -69,73 +87,57 @@ class VenueScreen extends Component {
             <h1 className="title">Add The Address</h1>
             <Button className={classes.button} variant="contained" color="primary" onClick={null}>Copy from existing activity</Button>
 
-            <div className="each-input-container">
-              <h4 className="sub-title">Place name</h4>
-              
-              <div className="each-input">
-                <Input name="placeName" onChange={this.handleInputs} placeholder="e.g. Frank's Soft Play!" />
-              </div>
+            <UserInput 
+              subtitle="Place Name"
+              placeholder="e.g. Frank's Soft Play!"
+              handleInputs={this.handleInputs}
+              name="placeName"
+            />
 
-            </div>
+            <UserInput 
+              subtitle="Postcode"
+              placeholder="e.g. SE1 6TY"
+              handleInputs={this.handleInputs}
+              name="postcode"
+            />
 
-            <div className="each-input-container">
-              <h4 className="sub-title">Postcode</h4>              
-              <div className="each-input">
-                <Input name="postcode" onChange={this.handleInputs} placeholder="SE1 7QP" />
-              </div>
-            </div>
+            <UserInput 
+              subtitle="Building Unit"
+              subtitleSmall="optional"
+              placeholder="e.g. Unit 4b"
+              handleInputs={this.handleInputs}
+              name="buildingUnit"
+            />
 
-            <div className="each-input-container">
-              <div className="flex-word-wrap">
-                <h4 className="sub-title">Building Unit</h4>
-                <p className="sub-title">optional</p>
-              </div>
+            <UserInput 
+              subtitle="Building Name"
+              subtitleSmall="optional"
+              placeholder="e.g. Wallis House"
+              handleInputs={this.handleInputs}
+              name="buildingName"
+            />
 
-              <div className="each-input">
-                <Input name="buildingUnit" onChange={this.handleInputs} placeholder="e.g. Unit 10" />
-              </div>
-            </div>
-
-            <div className="each-input-container">
-              <div className="flex-word-wrap">
-                <h4 className="sub-title">Building Name</h4>
-                <p className="sub-title">optional</p>
-              </div>
-
-              <div className="each-input">
-                <Input name="buildingName" onChange={this.handleInputs}placeholder="e.g. West House" />
-              </div>
-            </div>
-
-            <div className="each-input-container">
-              <div className="flex-word-wrap">
-                <h4 className="sub-title">Street Number</h4>
-              </div>
-
-              <div className="each-input">
-                <Input name="streetNumber" onChange={this.handleInputs} placeholder="e.g. 10" />
-              </div>
-            </div>
-
-            <div className="each-input-container">
-              <div className="flex-word-wrap">
-                <h4 className="sub-title">Street Name</h4>
-              </div>
-
-              <div className="each-input">
-                <Input name="streetName" onChange={this.handleInputs} placeholder="e.g. Cordwallis Road" />
-              </div>
-            </div>
-
-            <div className="each-input-container">
-              <div className="flex-word-wrap">
-                <h4 className="sub-title">Town</h4>
-              </div>
-
-              <div className="each-input">
-                <Input name="town" onChange={this.handleInputs} placeholder="e.g. London" />
-              </div>
-            </div>
+          
+            <UserInput 
+              subtitle="Street Number"
+              placeholder="e.g. 21"
+              handleInputs={this.handleInputs}
+              name="streetNumber"
+            />
+          
+            <UserInput 
+              subtitle="Street Name"
+              placeholder="e.g. Cordle Street"
+              handleInputs={this.handleInputs}
+              name="streetName"
+            />
+          
+            <UserInput 
+              subtitle="Town"
+              placeholder="e.g. Maidenhead"
+              handleInputs={this.handleInputs}
+              name="town"
+            />
 
           </div>
         </div>
@@ -148,9 +150,9 @@ class VenueScreen extends Component {
           </Button>
 
           <Button variant="contained" onClick={this.saveVenueData}>
-            <Link to='/confirmation'>
+            
               Next
-            </Link>
+            
           </Button>
         </div>
       </div>
@@ -167,6 +169,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   pageLoading: () => dispatch({ type: actions.VENUE_SCREEN_LOADING }),
+  updateStateUserIsInputtingData: () => dispatch({ type: actions.USER_INPUTTING_DATA }),
   saveVenueData: (obj) => dispatch({ type: actions.SAVE_VENUE_DATA, venueData: obj }),
 });
 
@@ -174,7 +177,7 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(withStyles(styles)(VenueScreen));
+)(withRouter(withStyles(styles)(VenueScreen)));
 
 // export default connect(mapStateToProps, mapDispatchToProps)(VenueScreen);
 

@@ -4,6 +4,7 @@ import * as actions from './constants';
 const initialState = {
     isLoading: false,
     venueData: {},
+    inputtingData: false,
     error: null,
 }
 
@@ -36,24 +37,33 @@ const venuePageReducer = (state = initialState, action) => {
         break;
 
         case actions.LOADING_ADDRESSES:
-        console.log('reducer heard yep LOADING_ADDRESSES');
+        console.log('reducer heard LOADING_ADDRESSES');
             return {
                 ...state,
             }
         break;
 
         case actions.ADDRESS_API_FAIL:
-        console.log('reducer heard yep ADDRESS_API_FAIL');
+        console.log('reducer heard ADDRESS_API_FAIL');
             return {
                 ...state,
                 error: action.error,
             }
         break;
 
-        case actions.SAVE_VENUE_DATA:
-        console.log('reducer heard yep SAVE_VENUE_DATA');
+        case actions.USER_INPUTTING_DATA:
+        console.log('reducer heard USER_INPUTTING_DATA');
             return {
                 ...state,
+                inputtingData: true,
+            }
+        break;
+
+        case actions.SAVE_VENUE_DATA:
+        console.log('reducer heard SAVE_VENUE_DATA');
+            return {
+                ...state,
+                inputtingData: false,
                 venueData: action.venueData,
             }
         break;

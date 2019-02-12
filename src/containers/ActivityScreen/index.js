@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 import * as actions from './constants';
 
-// material ui components
+// material-ui & UI components
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Input from '@material-ui/core/Input';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import NativeSelect from '@material-ui/core/NativeSelect';
+import UserInput from '../../components/UserInput';
 
 // lib funcs
 import presentAges from '../../lib/presentAges';
@@ -29,6 +29,7 @@ class ActivityScreen extends Component {
       activityWebpage: '',
       activityPhoneNumber: '',
       listOfAges: [],
+      activityName: '',
     }
   }
 
@@ -40,26 +41,43 @@ class ActivityScreen extends Component {
     this.setState({ selectedAgeTo: event.target.value });
   };
 
-  handleWebPage = event => {
-    this.setState({ activityWebpage: event.target.value });
-  }
-  
-  handlePhone = event => {
-    this.setState({ activityPhoneNumber: event.target.value });
+  handleInputs = event => {
+    this.setState({
+      [event.target.name] : event.target.value,
+    })
   }
 
-  handleName = event => {
-    this.setState({ activityName: event.target.value });
+  checkFieldsAreFilled = () => {
+    const { activityName, selectedAgeFrom, selectedAgeTo, activityWebpage } = this.state;
+    // check these are NOT incomplete before user can proceed:
+    if (!activityName || !selectedAgeFrom || !selectedAgeTo || !activityWebpage) {
+      return false;
+    } else {
+      return true;
+    }
   }
-
 
   saveActivityData = () => {
+    let isReady = this.checkFieldsAreFilled();
+
+    // take everything from state
     const { activityName, selectedAgeFrom, selectedAgeTo, activityWebpage, activityPhoneNumber } = this.state;
+    
+    // pop it in a fresh object
     let activityData = {
       activityName,
       selectedAgeFrom, selectedAgeTo, activityWebpage, activityPhoneNumber,
     }
-    this.props.saveActivityData(activityData);
+
+    // check the details have been entered
+    if (!isReady) {
+      alert('Please Check Fields Are Complete');
+      return this.props.history.push('/');
+    } else {
+      // pop it in the store 
+      this.props.saveActivityData(activityData);
+      this.props.history.push('/venue');
+    }
   }
 
   componentDidMount = () => {
@@ -79,14 +97,12 @@ class ActivityScreen extends Component {
           <div className="main-body">
             <h1 className="title">About Your Activity</h1>
 
-            <div className="each-input-container">
-              <h4 className="sub-title">Activity Name</h4>
-              
-              <div className="each-input">
-                <Input onChange={this.handleName}/>
-              </div>
-
-            </div>
+            <UserInput
+              subtitle="Activity Name"
+              handleInputs={this.handleInputs}
+              name="activityName"
+              placeholder="eg Franks SoftPlay Rave!"
+            />
 
             <div className="each-input-container">
               <h4 className="sub-title">Recommended Age</h4>
@@ -135,28 +151,24 @@ class ActivityScreen extends Component {
               
             </div>
 
-            <div className="each-input-container">
-              <h4 className="sub-title">Activity Webpage</h4>
-              <p className="sub-title">Use a specific page if possible. Try to avoid homepage links.</p>
-              
-              <div className="each-input">
-                <Input onChange={this.handleWebPage} placeholder="e.g. example.com/activity" />
-              </div>
-            </div>
+            <UserInput
+              subtitle="Activity Webpage"
+              handleInputs={this.handleInputs}
+              subtitleSmall="Use a specific page if possible. Try to avoid homepage links."
+              name="activityWebpage"
+              placeholder="eg http://google.com/FredsSoftPlay/event/1894"
+            />
 
-            <div className="each-input-container">
-              <div className="flex-word-wrap">
-                <h4 className="sub-title">Activity Phone Number</h4>
-                <p className="sub-title">optional</p>
-              </div>
-
-              <div className="each-input">
-                <Input onChange={this.handlePhone} placeholder="e.g. example.com/activity" />
-              </div>
-            </div>
+            <UserInput
+              subtitle="Activity Phone Number"
+              handleInputs={this.handleInputs}
+              subtitleSmall="optional"
+              name="activityPhoneNumber"
+              placeholder="eg +44 07123 123 123"
+            />
 
           </div>
-        </div>
+      </div>
 
         <div className="footer">
           <Button variant="contained" onClick={null}>

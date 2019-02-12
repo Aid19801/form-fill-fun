@@ -3,6 +3,7 @@ import * as actions from './constants';
 
 const initialState = {
     isLoading: false,
+    inputtingData: false,
     activityData: {},
     error: null,
 }
@@ -36,10 +37,19 @@ const activityPageReducer = (state = initialState, action) => {
             }
         break;
 
-        case actions.SAVE_ACTIVITY_DATA:
-        console.log('reducer heard yep SAVE_ACTIVITY_DATA');
+        case actions.USER_INPUTTING_DATA:
+        console.log('reducer heard USER_INPUTTING_DATA');
             return {
                 ...state,
+                inputtingData: true,
+            }
+        break;
+
+        case actions.SAVE_ACTIVITY_DATA:
+        console.log('reducer heard SAVE_ACTIVITY_DATA');
+            return {
+                ...state,
+                inputtingData: false,
                 activityData: action.activityData,
             }
         break;

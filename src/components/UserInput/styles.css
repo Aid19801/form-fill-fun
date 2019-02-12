@@ -1,0 +1,37 @@
+.each-input div {
+    width: 100%;
+}
+
+.sub-title {
+    margin-top: 9px;
+    margin-bottom: 13px;
+}
+
+h4.sub-title {
+    margin-bottom: 13px;
+}
+
+p.sub-title {
+    color: grey;
+}
+
+.each-input-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.flex-word-wrap {
+    justify-content: space-between;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.each-input {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 7px;
+}

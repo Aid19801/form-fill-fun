@@ -32,15 +32,6 @@ class ConfirmationScreen extends Component {
 
     const { classes, activityData, venueData } = this.props;
 
-    // all activity data from page 1
-    const { activityName, selectedAgeFrom,
-        selectedAgeTo, activityWebpage, activityPhoneNumber } = activityData;
-
-
-    // all venue data from page 2
-    const { placeName, postcode, buildingUnit, buildingName,
-        streetNumber, streetName, town } = venueData;
-
     return (
       <div className="homepage">
 

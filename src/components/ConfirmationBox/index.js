@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ConfirmationBox = (props) => {
+const ConfirmationBox = props => {
     return (
         <div className="events-conf-box">
             <h3>{props.title}</h3>
@@ -15,8 +15,8 @@ const ConfirmationBox = (props) => {
                 : 
                 <div>
                     <h4>{props.activityName}</h4>
-                    <p>from ages {props.selectedAgeFrom} to {props.selectedAgeTo}</p>
-                    <p>For more information: {props.activityWebpage} / {props.activityPhoneNumber}</p>
+                    <p>For ages {props.selectedAgeFrom} to {props.selectedAgeTo}</p>
+                    <p>For more information, visit: {props.activityWebpage} or call +44 {props.activityPhoneNumber}</p>
                 </div>
             }
         </div>
