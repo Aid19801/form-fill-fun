@@ -12,27 +12,85 @@
 }
 
 .content-card {
+    display: flex;
     width: 55%;
     height: 90%;
-    border: 2px solid red;
-    display: flex;
+    border: 2px solid blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    
     flex-direction: column;
+    background: white;
 }
 
 
 .header {
     height: 10%;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .main-body {
     height: 90%;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.sub-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.each-input-container {
+    width: 80%;
+    /* border: 2px solid grey; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.each-input {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.age-selector {
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+.age-selector div {
+    width: 100%;
+    /* border: 1px solid grey; */
+    border-radius: 7px;
+}
+
+.each-input div {
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.age-selectors-container {
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    
 }
 
 .footer {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100%;
     height: 10%;   
 }
@@ -41,6 +99,17 @@
     .content-card {
       width: 85%;
       border: 4px solid green;
-      
+    }
+    .age-selectors-container {
+        flex-direction: column;
+        /* border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        
+    }
+    .age-selector {
+        width: 70%;
     }
   }
