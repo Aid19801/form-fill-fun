@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Autosuggest from 'react-autosuggest';
 
 import * as actions from './constants';
 
@@ -9,9 +8,6 @@ import * as actions from './constants';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Input from '@material-ui/core/Input';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import NativeSelect from '@material-ui/core/NativeSelect';
 
 // lib funcs
 // import findAddresses from '../../lib/findAddresses';
@@ -27,6 +23,13 @@ class VenueScreen extends Component {
     this.state = {
       value: '',
       suggestions: [],
+      placeName: '',
+      postcode: '',
+      buildingUnit: '',
+      buildingName: '',
+      streetNumber: '',
+      streetName: '',
+      town: '',
     }
   }
 
@@ -34,12 +37,28 @@ class VenueScreen extends Component {
     this.props.pageLoading();
   }
 
-  render() {
+  handleInputs = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
+  saveVenueData = () => {
+    // take everything from state
+    const { placeName, postcode, buildingUnit, buildingName,
+    streetNumber, streetName, town } = this.state;
+
+    // pop it in fresh object
+    let venueData = {
+      placeName, postcode, buildingUnit, buildingName,
+    streetNumber, streetName, town,
+    }
     
+    // pop in the store
+    this.props.saveVenueData(venueData);
+  }
+
+  render() {
   
     const { classes } = this.props;
-
 
     return (
       <div className="homepage">
@@ -54,7 +73,7 @@ class VenueScreen extends Component {
               <h4 className="sub-title">Place name</h4>
               
               <div className="each-input">
-                <Input onChange={this.handleWebPage} placeholder="e.g. Frank's Soft Play!" />
+                <Input name="placeName" onChange={this.handleInputs} placeholder="e.g. Frank's Soft Play!" />
               </div>
 
             </div>
@@ -62,7 +81,7 @@ class VenueScreen extends Component {
             <div className="each-input-container">
               <h4 className="sub-title">Postcode</h4>              
               <div className="each-input">
-                <Input onChange={this.handleWebPage} placeholder="SE1 7QP" />
+                <Input name="postcode" onChange={this.handleInputs} placeholder="SE1 7QP" />
               </div>
             </div>
 
@@ -73,7 +92,7 @@ class VenueScreen extends Component {
               </div>
 
               <div className="each-input">
-                <Input onChange={this.handlePhone} placeholder="e.g. Unit 10" />
+                <Input name="buildingUnit" onChange={this.handleInputs} placeholder="e.g. Unit 10" />
               </div>
             </div>
 
@@ -84,7 +103,7 @@ class VenueScreen extends Component {
               </div>
 
               <div className="each-input">
-                <Input onChange={this.handlePhone} placeholder="e.g. West House" />
+                <Input name="buildingName" onChange={this.handleInputs}placeholder="e.g. West House" />
               </div>
             </div>
 
@@ -94,7 +113,7 @@ class VenueScreen extends Component {
               </div>
 
               <div className="each-input">
-                <Input onChange={this.handlePhone} placeholder="e.g. 10" />
+                <Input name="streetNumber" onChange={this.handleInputs} placeholder="e.g. 10" />
               </div>
             </div>
 
@@ -104,7 +123,7 @@ class VenueScreen extends Component {
               </div>
 
               <div className="each-input">
-                <Input onChange={this.handlePhone} placeholder="e.g. Cordwallis Road" />
+                <Input name="streetName" onChange={this.handleInputs} placeholder="e.g. Cordwallis Road" />
               </div>
             </div>
 
@@ -114,7 +133,7 @@ class VenueScreen extends Component {
               </div>
 
               <div className="each-input">
-                <Input onChange={this.handlePhone} placeholder="e.g. London" />
+                <Input name="town" onChange={this.handleInputs} placeholder="e.g. London" />
               </div>
             </div>
 
@@ -128,8 +147,8 @@ class VenueScreen extends Component {
             </Link>
           </Button>
 
-          <Button variant="contained" onClick={this.saveActivityData}>
-            <Link to='/venue'>
+          <Button variant="contained" onClick={this.saveVenueData}>
+            <Link to='/confirmation'>
               Next
             </Link>
           </Button>
@@ -142,12 +161,13 @@ class VenueScreen extends Component {
 const mapStateToProps = state => ({
   isLoading: state.activityPage.isLoading,
   addresses: state.venuePage.addresses,
+  activityData: state.activityPage.activityData,
   error: state.activityPage.error,
 });
 
 const mapDispatchToProps = dispatch => ({
   pageLoading: () => dispatch({ type: actions.VENUE_SCREEN_LOADING }),
-  loadingAddresses: (str) => dispatch({ type: actions.LOADING_ADDRESSES, searchTerm: str }),
+  saveVenueData: (obj) => dispatch({ type: actions.SAVE_VENUE_DATA, venueData: obj }),
 });
 
 

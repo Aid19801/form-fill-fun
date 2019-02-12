@@ -3,7 +3,7 @@ import * as actions from './constants';
 
 const initialState = {
     isLoading: false,
-    addresses: [],
+    venueData: {},
     error: null,
 }
 
@@ -39,7 +39,6 @@ const venuePageReducer = (state = initialState, action) => {
         console.log('reducer heard yep LOADING_ADDRESSES');
             return {
                 ...state,
-                addresses: action.addresses,
             }
         break;
 
@@ -51,10 +50,11 @@ const venuePageReducer = (state = initialState, action) => {
             }
         break;
 
-        case actions.SAVE_ALL_DATA:
-        console.log('reducer heard yep SAVE_ALL_DATA');
+        case actions.SAVE_VENUE_DATA:
+        console.log('reducer heard yep SAVE_VENUE_DATA');
             return {
                 ...state,
+                venueData: action.venueData,
             }
         break;
 

@@ -2,6 +2,7 @@
 /* eslint-disable */
 import { combineReducers } from 'redux';
 import activityPageReducer from '../containers/ActivityScreen/reducer';
+import confirmationPageReducer from '../containers/ConfirmationScreen/reducer';
 import venuePageReducer from '../containers/VenueScreen/reducer';
 
 import * as actions from './constants';
@@ -45,6 +46,7 @@ const appStateReducer = (state = initialState, action) => {
 const RootReducer = combineReducers({
     appState: appStateReducer,
     activityPage: activityPageReducer,
+    confirmationPage: confirmationPageReducer,
     venuePage: venuePageReducer,
 });
 
