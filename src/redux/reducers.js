@@ -1,6 +1,8 @@
 
 /* eslint-disable */
 import { combineReducers } from 'redux';
+import activityPageReducer from '../containers/Home/reducer';
+
 import * as actions from './constants';
 
 const initialState = {
@@ -41,6 +43,7 @@ const appStateReducer = (state = initialState, action) => {
 
 const RootReducer = combineReducers({
     appState: appStateReducer,
+    activityPage: activityPageReducer,
 });
 
 export default RootReducer;

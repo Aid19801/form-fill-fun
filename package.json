@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "react": "^16.8.1",
+    "react-autosuggest": "^9.4.3",
     "react-dom": "^16.8.1",
     "react-redux": "^6.0.0",
     "react-router": "^4.1.2",
@@ -19,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "mocks": "json-server src/mocks/hoop.json --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
