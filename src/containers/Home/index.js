@@ -1,7 +1,14 @@
 import React, { Component } from 'react'
-import Input from '@material-ui/core/Input';
-import NativeSelect from '@material-ui/core/Select';
+
 import { withStyles } from '@material-ui/core/styles';
+import Input from '@material-ui/core/Input';
+
+import FormHelperText from '@material-ui/core/FormHelperText';
+import FormControl from '@material-ui/core/FormControl';
+
+import NativeSelect from '@material-ui/core/NativeSelect';
+
+
 import styles from './material-styles';
 
 import presentAges from '../../lib/presentAges';
@@ -56,32 +63,67 @@ class HomePage extends Component {
               <h4 className="sub-title">Recommended Age</h4>
 
               <div className="age-selectors-container">
-                <div className="age-selector">
+                <FormControl className={classes.formControl}>
                   <NativeSelect
-                    native
-                    value={this.state.ageFrom}
+                    className={classes.selectEmpty}
+                    value={this.state.age}
+                    name="age"
                     onChange={(e) => this.handleAgeFrom(e)}
                   >
-                  { this.state.listOfAges.map(((each, i) => {
-                    return <option key={i} value={each}>{each}</option>
-                  })) }
-                  </NativeSelect>
-                </div>
+                  <option value="" disabled>
+                      From
+                    </option>
 
-                <div className="age-selector">
+                  { this.state.listOfAges.map((each, i) => {
+                    return <option key={i} value={each}>{each}</option>
+                  }) }
+
+
+                  </NativeSelect>
+                  <FormHelperText>From</FormHelperText>
+                </FormControl>
+
+                <FormControl className={classes.formControl}>
                   <NativeSelect
-                    native
-                    value={this.state.ageFrom}
+                    className={classes.selectEmpty}
+                    value={this.state.age}
+                    name="age"
                     onChange={(e) => this.handleAgeTo(e)}
                   >
-                  { this.state.listOfAges.map(((each, i) => {
-                    return <option key={i} value={each}>{each}</option>
-                  })) }
-                  </NativeSelect>
-                </div>
+                  <option value="" disabled>
+                      To
+                    </option>
 
+                  { this.state.listOfAges.map((each, i) => {
+                    return <option key={i} value={each}>{each}</option>
+                  }) }
+
+
+                  </NativeSelect>
+                  <FormHelperText>To</FormHelperText>
+                </FormControl>
               </div>
               
+            </div>
+
+            <div className="each-input-container">
+              <h4 className="sub-title">Activity Webpage</h4>
+              <p className="sub-title">Use a specific page if possible. Try to avoid homepage links.</p>
+              
+              <div className="each-input">
+                <Input placeholder="e.g. example.com/activity" />
+              </div>
+            </div>
+
+            <div className="each-input-container">
+              <div className="flex-word-wrap">
+                <h4 className="sub-title">Activity Phone Number</h4>
+                <p className="sub-title">optional</p>
+              </div>
+
+              <div className="each-input">
+                <Input placeholder="e.g. example.com/activity" />
+              </div>
             </div>
 
           </div>

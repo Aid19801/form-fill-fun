@@ -25,7 +25,6 @@
     background: white;
 }
 
-
 .header {
     height: 10%;
     width: 100%;
@@ -45,9 +44,18 @@
     align-content: center;
 }
 
+
 .sub-title {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 9px;
+    margin-bottom: 13px;
+}
+
+h4.sub-title {
+    margin-bottom: 13px;
+}
+p.sub-title {
+    color: grey;
+
 }
 
 .each-input-container {
@@ -56,16 +64,17 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-top: 10px;
 }
 
+.flex-word-wrap {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 .each-input {
     width: 100%;
-    border: 1px solid grey;
-    border-radius: 7px;
-}
-
-.age-selector {
-    width: 50%;
     border: 1px solid grey;
     border-radius: 7px;
 }
@@ -82,13 +91,16 @@
 }
 
 .age-selectors-container {
+    border: 1px solid grey;
+    border-radius: 7px;
     display: flex;
-    width: 100%;
-    /* border: 2px solid red; */
     flex-direction: row;
-    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    width: 100%;
 }
-
 .footer {
     /* border: 2px solid green; */
     width: 100%;
@@ -102,14 +114,5 @@
     }
     .age-selectors-container {
         flex-direction: column;
-        /* border: 2px solid red; */
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        
-    }
-    .age-selector {
-        width: 70%;
     }
   }
