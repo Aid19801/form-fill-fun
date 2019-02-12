@@ -7,12 +7,6 @@ const initialState = {
     error: null,
 }
 
-export const ACTIVITY_SCREEN_LOADING = 'ACTIVITY_SCREEN_LOADING';
-export const ACTIVITY_SCREEN_LOADED = 'ACTIVITY_SCREEN_LOADED';
-export const ACTIVITY_SCREEN_FAILED = 'ACTIVITY_SCREEN_FAILED';
-export const SAVE_ACTIVITY_DATA = 'SAVE_ACTIVITY_DATA';
-
-
 
 // setup of page, including managing state of api.
 const activityPageReducer = (state = initialState, action) => {

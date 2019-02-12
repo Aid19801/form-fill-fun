@@ -1,5 +1,5 @@
-
+import { watcherLoadAddresses } from '../containers/VenueScreen/sagas';
 
 export {
-    // all sagas
+    watcherLoadAddresses,
 }

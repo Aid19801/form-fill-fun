@@ -18,7 +18,7 @@ const store = createStore(
 
 function* rootSaga() {
     yield all([
-        // preparing boilerplate for async/api later
+        sagas.watcherLoadAddresses(),
     ])
 }
 
