@@ -1,0 +1,4751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App 💻 Activity Screen should render the ActivityScreen without exploding... 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ActivityScreen
+    activityData={Array []}
+    addresses={Array []}
+    classes={
+      Object {
+        "formControl": "foo",
+      }
+    }
+    error={null}
+    isLoading={false}
+    pageLoading={[Function]}
+    saveActivityData={[Function]}
+    updateStateUserIsInputtingData={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="content-card"
+        >
+          <Header />
+          <div
+            className="main-body"
+          >
+            <h1
+              className="title"
+            >
+              About Your Activity
+            </h1>
+            <UserInput
+              handleInputs={[Function]}
+              name="activityName"
+              placeholder="eg Franks SoftPlay Rave!"
+              subtitle="Activity Name"
+            />
+            <div
+              className="each-input-container"
+            >
+              <h4
+                className="sub-title"
+              >
+                Recommended Age
+              </h4>
+              <div
+                className="age-selectors-container"
+              >
+                <WithStyles(FormControl)
+                  className="foo"
+                >
+                  <WithStyles(WithFormControlContext(NativeSelect))
+                    name="age"
+                    onChange={[Function]}
+                  >
+                    <option
+                      disabled={true}
+                      value=""
+                    >
+                      From
+                    </option>
+                    <option
+                      value={0}
+                    >
+                      0
+                    </option>
+                    <option
+                      value={1}
+                    >
+                      1
+                    </option>
+                    <option
+                      value={2}
+                    >
+                      2
+                    </option>
+                    <option
+                      value={3}
+                    >
+                      3
+                    </option>
+                    <option
+                      value={4}
+                    >
+                      4
+                    </option>
+                    <option
+                      value={5}
+                    >
+                      5
+                    </option>
+                    <option
+                      value={6}
+                    >
+                      6
+                    </option>
+                    <option
+                      value={7}
+                    >
+                      7
+                    </option>
+                    <option
+                      value={8}
+                    >
+                      8
+                    </option>
+                    <option
+                      value={9}
+                    >
+                      9
+                    </option>
+                    <option
+                      value={10}
+                    >
+                      10
+                    </option>
+                    <option
+                      value={11}
+                    >
+                      11
+                    </option>
+                  </WithStyles(WithFormControlContext(NativeSelect))>
+                  <WithStyles(WithFormControlContext(FormHelperText))>
+                    From
+                  </WithStyles(WithFormControlContext(FormHelperText))>
+                </WithStyles(FormControl)>
+                <WithStyles(FormControl)
+                  className="foo"
+                >
+                  <WithStyles(WithFormControlContext(NativeSelect))
+                    name="age"
+                    onChange={[Function]}
+                  >
+                    <option
+                      disabled={true}
+                      value=""
+                    >
+                      To
+                    </option>
+                    <option
+                      value={0}
+                    >
+                      0
+                    </option>
+                    <option
+                      value={1}
+                    >
+                      1
+                    </option>
+                    <option
+                      value={2}
+                    >
+                      2
+                    </option>
+                    <option
+                      value={3}
+                    >
+                      3
+                    </option>
+                    <option
+                      value={4}
+                    >
+                      4
+                    </option>
+                    <option
+                      value={5}
+                    >
+                      5
+                    </option>
+                    <option
+                      value={6}
+                    >
+                      6
+                    </option>
+                    <option
+                      value={7}
+                    >
+                      7
+                    </option>
+                    <option
+                      value={8}
+                    >
+                      8
+                    </option>
+                    <option
+                      value={9}
+                    >
+                      9
+                    </option>
+                    <option
+                      value={10}
+                    >
+                      10
+                    </option>
+                    <option
+                      value={11}
+                    >
+                      11
+                    </option>
+                  </WithStyles(WithFormControlContext(NativeSelect))>
+                  <WithStyles(WithFormControlContext(FormHelperText))>
+                    To
+                  </WithStyles(WithFormControlContext(FormHelperText))>
+                </WithStyles(FormControl)>
+              </div>
+            </div>
+            <UserInput
+              handleInputs={[Function]}
+              name="activityWebpage"
+              placeholder="eg http://google.com/FredsSoftPlay/event/1894"
+              subtitle="Activity Webpage"
+              subtitleSmall="Use a specific page if possible. Try to avoid homepage links."
+            />
+            <UserInput
+              handleInputs={[Function]}
+              name="activityPhoneNumber"
+              placeholder="eg +44 07123 123 123"
+              subtitle="Activity Phone Number"
+              subtitleSmall="optional"
+            />
+          </div>
+        </div>,
+        <div
+          className="footer"
+        >
+          <WithStyles(Button)
+            onClick={null}
+            variant="contained"
+          >
+            <Link
+              replace={false}
+              to="/"
+            >
+              Back
+            </Link>
+          </WithStyles(Button)>
+          <WithStyles(Button)
+            onClick={[Function]}
+            variant="contained"
+          >
+            <Link
+              replace={false}
+              to="/venue"
+            >
+              Next
+            </Link>
+          </WithStyles(Button)>
+        </div>,
+      ],
+      "className": "homepage",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Header />,
+            <div
+              className="main-body"
+            >
+              <h1
+                className="title"
+              >
+                About Your Activity
+              </h1>
+              <UserInput
+                handleInputs={[Function]}
+                name="activityName"
+                placeholder="eg Franks SoftPlay Rave!"
+                subtitle="Activity Name"
+              />
+              <div
+                className="each-input-container"
+              >
+                <h4
+                  className="sub-title"
+                >
+                  Recommended Age
+                </h4>
+                <div
+                  className="age-selectors-container"
+                >
+                  <WithStyles(FormControl)
+                    className="foo"
+                  >
+                    <WithStyles(WithFormControlContext(NativeSelect))
+                      name="age"
+                      onChange={[Function]}
+                    >
+                      <option
+                        disabled={true}
+                        value=""
+                      >
+                        From
+                      </option>
+                      <option
+                        value={0}
+                      >
+                        0
+                      </option>
+                      <option
+                        value={1}
+                      >
+                        1
+                      </option>
+                      <option
+                        value={2}
+                      >
+                        2
+                      </option>
+                      <option
+                        value={3}
+                      >
+                        3
+                      </option>
+                      <option
+                        value={4}
+                      >
+                        4
+                      </option>
+                      <option
+                        value={5}
+                      >
+                        5
+                      </option>
+                      <option
+                        value={6}
+                      >
+                        6
+                      </option>
+                      <option
+                        value={7}
+                      >
+                        7
+                      </option>
+                      <option
+                        value={8}
+                      >
+                        8
+                      </option>
+                      <option
+                        value={9}
+                      >
+                        9
+                      </option>
+                      <option
+                        value={10}
+                      >
+                        10
+                      </option>
+                      <option
+                        value={11}
+                      >
+                        11
+                      </option>
+                    </WithStyles(WithFormControlContext(NativeSelect))>
+                    <WithStyles(WithFormControlContext(FormHelperText))>
+                      From
+                    </WithStyles(WithFormControlContext(FormHelperText))>
+                  </WithStyles(FormControl)>
+                  <WithStyles(FormControl)
+                    className="foo"
+                  >
+                    <WithStyles(WithFormControlContext(NativeSelect))
+                      name="age"
+                      onChange={[Function]}
+                    >
+                      <option
+                        disabled={true}
+                        value=""
+                      >
+                        To
+                      </option>
+                      <option
+                        value={0}
+                      >
+                        0
+                      </option>
+                      <option
+                        value={1}
+                      >
+                        1
+                      </option>
+                      <option
+                        value={2}
+                      >
+                        2
+                      </option>
+                      <option
+                        value={3}
+                      >
+                        3
+                      </option>
+                      <option
+                        value={4}
+                      >
+                        4
+                      </option>
+                      <option
+                        value={5}
+                      >
+                        5
+                      </option>
+                      <option
+                        value={6}
+                      >
+                        6
+                      </option>
+                      <option
+                        value={7}
+                      >
+                        7
+                      </option>
+                      <option
+                        value={8}
+                      >
+                        8
+                      </option>
+                      <option
+                        value={9}
+                      >
+                        9
+                      </option>
+                      <option
+                        value={10}
+                      >
+                        10
+                      </option>
+                      <option
+                        value={11}
+                      >
+                        11
+                      </option>
+                    </WithStyles(WithFormControlContext(NativeSelect))>
+                    <WithStyles(WithFormControlContext(FormHelperText))>
+                      To
+                    </WithStyles(WithFormControlContext(FormHelperText))>
+                  </WithStyles(FormControl)>
+                </div>
+              </div>
+              <UserInput
+                handleInputs={[Function]}
+                name="activityWebpage"
+                placeholder="eg http://google.com/FredsSoftPlay/event/1894"
+                subtitle="Activity Webpage"
+                subtitleSmall="Use a specific page if possible. Try to avoid homepage links."
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="activityPhoneNumber"
+                placeholder="eg +44 07123 123 123"
+                subtitle="Activity Phone Number"
+                subtitleSmall="optional"
+              />
+            </div>,
+          ],
+          "className": "content-card",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="title"
+                >
+                  About Your Activity
+                </h1>,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="activityName"
+                  placeholder="eg Franks SoftPlay Rave!"
+                  subtitle="Activity Name"
+                />,
+                <div
+                  className="each-input-container"
+                >
+                  <h4
+                    className="sub-title"
+                  >
+                    Recommended Age
+                  </h4>
+                  <div
+                    className="age-selectors-container"
+                  >
+                    <WithStyles(FormControl)
+                      className="foo"
+                    >
+                      <WithStyles(WithFormControlContext(NativeSelect))
+                        name="age"
+                        onChange={[Function]}
+                      >
+                        <option
+                          disabled={true}
+                          value=""
+                        >
+                          From
+                        </option>
+                        <option
+                          value={0}
+                        >
+                          0
+                        </option>
+                        <option
+                          value={1}
+                        >
+                          1
+                        </option>
+                        <option
+                          value={2}
+                        >
+                          2
+                        </option>
+                        <option
+                          value={3}
+                        >
+                          3
+                        </option>
+                        <option
+                          value={4}
+                        >
+                          4
+                        </option>
+                        <option
+                          value={5}
+                        >
+                          5
+                        </option>
+                        <option
+                          value={6}
+                        >
+                          6
+                        </option>
+                        <option
+                          value={7}
+                        >
+                          7
+                        </option>
+                        <option
+                          value={8}
+                        >
+                          8
+                        </option>
+                        <option
+                          value={9}
+                        >
+                          9
+                        </option>
+                        <option
+                          value={10}
+                        >
+                          10
+                        </option>
+                        <option
+                          value={11}
+                        >
+                          11
+                        </option>
+                      </WithStyles(WithFormControlContext(NativeSelect))>
+                      <WithStyles(WithFormControlContext(FormHelperText))>
+                        From
+                      </WithStyles(WithFormControlContext(FormHelperText))>
+                    </WithStyles(FormControl)>
+                    <WithStyles(FormControl)
+                      className="foo"
+                    >
+                      <WithStyles(WithFormControlContext(NativeSelect))
+                        name="age"
+                        onChange={[Function]}
+                      >
+                        <option
+                          disabled={true}
+                          value=""
+                        >
+                          To
+                        </option>
+                        <option
+                          value={0}
+                        >
+                          0
+                        </option>
+                        <option
+                          value={1}
+                        >
+                          1
+                        </option>
+                        <option
+                          value={2}
+                        >
+                          2
+                        </option>
+                        <option
+                          value={3}
+                        >
+                          3
+                        </option>
+                        <option
+                          value={4}
+                        >
+                          4
+                        </option>
+                        <option
+                          value={5}
+                        >
+                          5
+                        </option>
+                        <option
+                          value={6}
+                        >
+                          6
+                        </option>
+                        <option
+                          value={7}
+                        >
+                          7
+                        </option>
+                        <option
+                          value={8}
+                        >
+                          8
+                        </option>
+                        <option
+                          value={9}
+                        >
+                          9
+                        </option>
+                        <option
+                          value={10}
+                        >
+                          10
+                        </option>
+                        <option
+                          value={11}
+                        >
+                          11
+                        </option>
+                      </WithStyles(WithFormControlContext(NativeSelect))>
+                      <WithStyles(WithFormControlContext(FormHelperText))>
+                        To
+                      </WithStyles(WithFormControlContext(FormHelperText))>
+                    </WithStyles(FormControl)>
+                  </div>
+                </div>,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="activityWebpage"
+                  placeholder="eg http://google.com/FredsSoftPlay/event/1894"
+                  subtitle="Activity Webpage"
+                  subtitleSmall="Use a specific page if possible. Try to avoid homepage links."
+                />,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="activityPhoneNumber"
+                  placeholder="eg +44 07123 123 123"
+                  subtitle="Activity Phone Number"
+                  subtitleSmall="optional"
+                />,
+              ],
+              "className": "main-body",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "About Your Activity",
+                  "className": "title",
+                },
+                "ref": null,
+                "rendered": "About Your Activity",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "activityName",
+                  "placeholder": "eg Franks SoftPlay Rave!",
+                  "subtitle": "Activity Name",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h4
+                      className="sub-title"
+                    >
+                      Recommended Age
+                    </h4>,
+                    <div
+                      className="age-selectors-container"
+                    >
+                      <WithStyles(FormControl)
+                        className="foo"
+                      >
+                        <WithStyles(WithFormControlContext(NativeSelect))
+                          name="age"
+                          onChange={[Function]}
+                        >
+                          <option
+                            disabled={true}
+                            value=""
+                          >
+                            From
+                          </option>
+                          <option
+                            value={0}
+                          >
+                            0
+                          </option>
+                          <option
+                            value={1}
+                          >
+                            1
+                          </option>
+                          <option
+                            value={2}
+                          >
+                            2
+                          </option>
+                          <option
+                            value={3}
+                          >
+                            3
+                          </option>
+                          <option
+                            value={4}
+                          >
+                            4
+                          </option>
+                          <option
+                            value={5}
+                          >
+                            5
+                          </option>
+                          <option
+                            value={6}
+                          >
+                            6
+                          </option>
+                          <option
+                            value={7}
+                          >
+                            7
+                          </option>
+                          <option
+                            value={8}
+                          >
+                            8
+                          </option>
+                          <option
+                            value={9}
+                          >
+                            9
+                          </option>
+                          <option
+                            value={10}
+                          >
+                            10
+                          </option>
+                          <option
+                            value={11}
+                          >
+                            11
+                          </option>
+                        </WithStyles(WithFormControlContext(NativeSelect))>
+                        <WithStyles(WithFormControlContext(FormHelperText))>
+                          From
+                        </WithStyles(WithFormControlContext(FormHelperText))>
+                      </WithStyles(FormControl)>
+                      <WithStyles(FormControl)
+                        className="foo"
+                      >
+                        <WithStyles(WithFormControlContext(NativeSelect))
+                          name="age"
+                          onChange={[Function]}
+                        >
+                          <option
+                            disabled={true}
+                            value=""
+                          >
+                            To
+                          </option>
+                          <option
+                            value={0}
+                          >
+                            0
+                          </option>
+                          <option
+                            value={1}
+                          >
+                            1
+                          </option>
+                          <option
+                            value={2}
+                          >
+                            2
+                          </option>
+                          <option
+                            value={3}
+                          >
+                            3
+                          </option>
+                          <option
+                            value={4}
+                          >
+                            4
+                          </option>
+                          <option
+                            value={5}
+                          >
+                            5
+                          </option>
+                          <option
+                            value={6}
+                          >
+                            6
+                          </option>
+                          <option
+                            value={7}
+                          >
+                            7
+                          </option>
+                          <option
+                            value={8}
+                          >
+                            8
+                          </option>
+                          <option
+                            value={9}
+                          >
+                            9
+                          </option>
+                          <option
+                            value={10}
+                          >
+                            10
+                          </option>
+                          <option
+                            value={11}
+                          >
+                            11
+                          </option>
+                        </WithStyles(WithFormControlContext(NativeSelect))>
+                        <WithStyles(WithFormControlContext(FormHelperText))>
+                          To
+                        </WithStyles(WithFormControlContext(FormHelperText))>
+                      </WithStyles(FormControl)>
+                    </div>,
+                  ],
+                  "className": "each-input-container",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Recommended Age",
+                      "className": "sub-title",
+                    },
+                    "ref": null,
+                    "rendered": "Recommended Age",
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <WithStyles(FormControl)
+                          className="foo"
+                        >
+                          <WithStyles(WithFormControlContext(NativeSelect))
+                            name="age"
+                            onChange={[Function]}
+                          >
+                            <option
+                              disabled={true}
+                              value=""
+                            >
+                              From
+                            </option>
+                            <option
+                              value={0}
+                            >
+                              0
+                            </option>
+                            <option
+                              value={1}
+                            >
+                              1
+                            </option>
+                            <option
+                              value={2}
+                            >
+                              2
+                            </option>
+                            <option
+                              value={3}
+                            >
+                              3
+                            </option>
+                            <option
+                              value={4}
+                            >
+                              4
+                            </option>
+                            <option
+                              value={5}
+                            >
+                              5
+                            </option>
+                            <option
+                              value={6}
+                            >
+                              6
+                            </option>
+                            <option
+                              value={7}
+                            >
+                              7
+                            </option>
+                            <option
+                              value={8}
+                            >
+                              8
+                            </option>
+                            <option
+                              value={9}
+                            >
+                              9
+                            </option>
+                            <option
+                              value={10}
+                            >
+                              10
+                            </option>
+                            <option
+                              value={11}
+                            >
+                              11
+                            </option>
+                          </WithStyles(WithFormControlContext(NativeSelect))>
+                          <WithStyles(WithFormControlContext(FormHelperText))>
+                            From
+                          </WithStyles(WithFormControlContext(FormHelperText))>
+                        </WithStyles(FormControl)>,
+                        <WithStyles(FormControl)
+                          className="foo"
+                        >
+                          <WithStyles(WithFormControlContext(NativeSelect))
+                            name="age"
+                            onChange={[Function]}
+                          >
+                            <option
+                              disabled={true}
+                              value=""
+                            >
+                              To
+                            </option>
+                            <option
+                              value={0}
+                            >
+                              0
+                            </option>
+                            <option
+                              value={1}
+                            >
+                              1
+                            </option>
+                            <option
+                              value={2}
+                            >
+                              2
+                            </option>
+                            <option
+                              value={3}
+                            >
+                              3
+                            </option>
+                            <option
+                              value={4}
+                            >
+                              4
+                            </option>
+                            <option
+                              value={5}
+                            >
+                              5
+                            </option>
+                            <option
+                              value={6}
+                            >
+                              6
+                            </option>
+                            <option
+                              value={7}
+                            >
+                              7
+                            </option>
+                            <option
+                              value={8}
+                            >
+                              8
+                            </option>
+                            <option
+                              value={9}
+                            >
+                              9
+                            </option>
+                            <option
+                              value={10}
+                            >
+                              10
+                            </option>
+                            <option
+                              value={11}
+                            >
+                              11
+                            </option>
+                          </WithStyles(WithFormControlContext(NativeSelect))>
+                          <WithStyles(WithFormControlContext(FormHelperText))>
+                            To
+                          </WithStyles(WithFormControlContext(FormHelperText))>
+                        </WithStyles(FormControl)>,
+                      ],
+                      "className": "age-selectors-container",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            <WithStyles(WithFormControlContext(NativeSelect))
+                              name="age"
+                              onChange={[Function]}
+                            >
+                              <option
+                                disabled={true}
+                                value=""
+                              >
+                                From
+                              </option>
+                              <option
+                                value={0}
+                              >
+                                0
+                              </option>
+                              <option
+                                value={1}
+                              >
+                                1
+                              </option>
+                              <option
+                                value={2}
+                              >
+                                2
+                              </option>
+                              <option
+                                value={3}
+                              >
+                                3
+                              </option>
+                              <option
+                                value={4}
+                              >
+                                4
+                              </option>
+                              <option
+                                value={5}
+                              >
+                                5
+                              </option>
+                              <option
+                                value={6}
+                              >
+                                6
+                              </option>
+                              <option
+                                value={7}
+                              >
+                                7
+                              </option>
+                              <option
+                                value={8}
+                              >
+                                8
+                              </option>
+                              <option
+                                value={9}
+                              >
+                                9
+                              </option>
+                              <option
+                                value={10}
+                              >
+                                10
+                              </option>
+                              <option
+                                value={11}
+                              >
+                                11
+                              </option>
+                            </WithStyles(WithFormControlContext(NativeSelect))>,
+                            <WithStyles(WithFormControlContext(FormHelperText))>
+                              From
+                            </WithStyles(WithFormControlContext(FormHelperText))>,
+                          ],
+                          "className": "foo",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": Array [
+                                <option
+                                  disabled={true}
+                                  value=""
+                                >
+                                  From
+                                </option>,
+                                Array [
+                                  <option
+                                    value={0}
+                                  >
+                                    0
+                                  </option>,
+                                  <option
+                                    value={1}
+                                  >
+                                    1
+                                  </option>,
+                                  <option
+                                    value={2}
+                                  >
+                                    2
+                                  </option>,
+                                  <option
+                                    value={3}
+                                  >
+                                    3
+                                  </option>,
+                                  <option
+                                    value={4}
+                                  >
+                                    4
+                                  </option>,
+                                  <option
+                                    value={5}
+                                  >
+                                    5
+                                  </option>,
+                                  <option
+                                    value={6}
+                                  >
+                                    6
+                                  </option>,
+                                  <option
+                                    value={7}
+                                  >
+                                    7
+                                  </option>,
+                                  <option
+                                    value={8}
+                                  >
+                                    8
+                                  </option>,
+                                  <option
+                                    value={9}
+                                  >
+                                    9
+                                  </option>,
+                                  <option
+                                    value={10}
+                                  >
+                                    10
+                                  </option>,
+                                  <option
+                                    value={11}
+                                  >
+                                    11
+                                  </option>,
+                                ],
+                              ],
+                              "className": undefined,
+                              "name": "age",
+                              "onChange": [Function],
+                              "value": undefined,
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "From",
+                                  "disabled": true,
+                                  "value": "",
+                                },
+                                "ref": null,
+                                "rendered": "From",
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "0",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 0,
+                                  "value": 0,
+                                },
+                                "ref": null,
+                                "rendered": 0,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "1",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 1,
+                                  "value": 1,
+                                },
+                                "ref": null,
+                                "rendered": 1,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "2",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 2,
+                                  "value": 2,
+                                },
+                                "ref": null,
+                                "rendered": 2,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "3",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 3,
+                                  "value": 3,
+                                },
+                                "ref": null,
+                                "rendered": 3,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "4",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 4,
+                                  "value": 4,
+                                },
+                                "ref": null,
+                                "rendered": 4,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "5",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 5,
+                                  "value": 5,
+                                },
+                                "ref": null,
+                                "rendered": 5,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "6",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 6,
+                                  "value": 6,
+                                },
+                                "ref": null,
+                                "rendered": 6,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "7",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 7,
+                                  "value": 7,
+                                },
+                                "ref": null,
+                                "rendered": 7,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "8",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 8,
+                                  "value": 8,
+                                },
+                                "ref": null,
+                                "rendered": 8,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "9",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 9,
+                                  "value": 9,
+                                },
+                                "ref": null,
+                                "rendered": 9,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "10",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 10,
+                                  "value": 10,
+                                },
+                                "ref": null,
+                                "rendered": 10,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "11",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 11,
+                                  "value": 11,
+                                },
+                                "ref": null,
+                                "rendered": 11,
+                                "type": "option",
+                              },
+                            ],
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": "From",
+                            },
+                            "ref": null,
+                            "rendered": "From",
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": Array [
+                            <WithStyles(WithFormControlContext(NativeSelect))
+                              name="age"
+                              onChange={[Function]}
+                            >
+                              <option
+                                disabled={true}
+                                value=""
+                              >
+                                To
+                              </option>
+                              <option
+                                value={0}
+                              >
+                                0
+                              </option>
+                              <option
+                                value={1}
+                              >
+                                1
+                              </option>
+                              <option
+                                value={2}
+                              >
+                                2
+                              </option>
+                              <option
+                                value={3}
+                              >
+                                3
+                              </option>
+                              <option
+                                value={4}
+                              >
+                                4
+                              </option>
+                              <option
+                                value={5}
+                              >
+                                5
+                              </option>
+                              <option
+                                value={6}
+                              >
+                                6
+                              </option>
+                              <option
+                                value={7}
+                              >
+                                7
+                              </option>
+                              <option
+                                value={8}
+                              >
+                                8
+                              </option>
+                              <option
+                                value={9}
+                              >
+                                9
+                              </option>
+                              <option
+                                value={10}
+                              >
+                                10
+                              </option>
+                              <option
+                                value={11}
+                              >
+                                11
+                              </option>
+                            </WithStyles(WithFormControlContext(NativeSelect))>,
+                            <WithStyles(WithFormControlContext(FormHelperText))>
+                              To
+                            </WithStyles(WithFormControlContext(FormHelperText))>,
+                          ],
+                          "className": "foo",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": Array [
+                                <option
+                                  disabled={true}
+                                  value=""
+                                >
+                                  To
+                                </option>,
+                                Array [
+                                  <option
+                                    value={0}
+                                  >
+                                    0
+                                  </option>,
+                                  <option
+                                    value={1}
+                                  >
+                                    1
+                                  </option>,
+                                  <option
+                                    value={2}
+                                  >
+                                    2
+                                  </option>,
+                                  <option
+                                    value={3}
+                                  >
+                                    3
+                                  </option>,
+                                  <option
+                                    value={4}
+                                  >
+                                    4
+                                  </option>,
+                                  <option
+                                    value={5}
+                                  >
+                                    5
+                                  </option>,
+                                  <option
+                                    value={6}
+                                  >
+                                    6
+                                  </option>,
+                                  <option
+                                    value={7}
+                                  >
+                                    7
+                                  </option>,
+                                  <option
+                                    value={8}
+                                  >
+                                    8
+                                  </option>,
+                                  <option
+                                    value={9}
+                                  >
+                                    9
+                                  </option>,
+                                  <option
+                                    value={10}
+                                  >
+                                    10
+                                  </option>,
+                                  <option
+                                    value={11}
+                                  >
+                                    11
+                                  </option>,
+                                ],
+                              ],
+                              "className": undefined,
+                              "name": "age",
+                              "onChange": [Function],
+                              "value": undefined,
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              Object {
+                                "instance": null,
+                                "key": undefined,
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": "To",
+                                  "disabled": true,
+                                  "value": "",
+                                },
+                                "ref": null,
+                                "rendered": "To",
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "0",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 0,
+                                  "value": 0,
+                                },
+                                "ref": null,
+                                "rendered": 0,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "1",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 1,
+                                  "value": 1,
+                                },
+                                "ref": null,
+                                "rendered": 1,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "2",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 2,
+                                  "value": 2,
+                                },
+                                "ref": null,
+                                "rendered": 2,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "3",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 3,
+                                  "value": 3,
+                                },
+                                "ref": null,
+                                "rendered": 3,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "4",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 4,
+                                  "value": 4,
+                                },
+                                "ref": null,
+                                "rendered": 4,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "5",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 5,
+                                  "value": 5,
+                                },
+                                "ref": null,
+                                "rendered": 5,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "6",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 6,
+                                  "value": 6,
+                                },
+                                "ref": null,
+                                "rendered": 6,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "7",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 7,
+                                  "value": 7,
+                                },
+                                "ref": null,
+                                "rendered": 7,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "8",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 8,
+                                  "value": 8,
+                                },
+                                "ref": null,
+                                "rendered": 8,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "9",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 9,
+                                  "value": 9,
+                                },
+                                "ref": null,
+                                "rendered": 9,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "10",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 10,
+                                  "value": 10,
+                                },
+                                "ref": null,
+                                "rendered": 10,
+                                "type": "option",
+                              },
+                              Object {
+                                "instance": null,
+                                "key": "11",
+                                "nodeType": "host",
+                                "props": Object {
+                                  "children": 11,
+                                  "value": 11,
+                                },
+                                "ref": null,
+                                "rendered": 11,
+                                "type": "option",
+                              },
+                            ],
+                            "type": [Function],
+                          },
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "class",
+                            "props": Object {
+                              "children": "To",
+                            },
+                            "ref": null,
+                            "rendered": "To",
+                            "type": [Function],
+                          },
+                        ],
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "div",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "activityWebpage",
+                  "placeholder": "eg http://google.com/FredsSoftPlay/event/1894",
+                  "subtitle": "Activity Webpage",
+                  "subtitleSmall": "Use a specific page if possible. Try to avoid homepage links.",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "activityPhoneNumber",
+                  "placeholder": "eg +44 07123 123 123",
+                  "subtitle": "Activity Phone Number",
+                  "subtitleSmall": "optional",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Button)
+              onClick={null}
+              variant="contained"
+            >
+              <Link
+                replace={false}
+                to="/"
+              >
+                Back
+              </Link>
+            </WithStyles(Button)>,
+            <WithStyles(Button)
+              onClick={[Function]}
+              variant="contained"
+            >
+              <Link
+                replace={false}
+                to="/venue"
+              >
+                Next
+              </Link>
+            </WithStyles(Button)>,
+          ],
+          "className": "footer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/"
+              >
+                Back
+              </Link>,
+              "onClick": null,
+              "variant": "contained",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Back",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Back",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/venue"
+              >
+                Next
+              </Link>,
+              "onClick": [Function],
+              "variant": "contained",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Next",
+                "replace": false,
+                "to": "/venue",
+              },
+              "ref": null,
+              "rendered": "Next",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="content-card"
+          >
+            <Header />
+            <div
+              className="main-body"
+            >
+              <h1
+                className="title"
+              >
+                About Your Activity
+              </h1>
+              <UserInput
+                handleInputs={[Function]}
+                name="activityName"
+                placeholder="eg Franks SoftPlay Rave!"
+                subtitle="Activity Name"
+              />
+              <div
+                className="each-input-container"
+              >
+                <h4
+                  className="sub-title"
+                >
+                  Recommended Age
+                </h4>
+                <div
+                  className="age-selectors-container"
+                >
+                  <WithStyles(FormControl)
+                    className="foo"
+                  >
+                    <WithStyles(WithFormControlContext(NativeSelect))
+                      name="age"
+                      onChange={[Function]}
+                    >
+                      <option
+                        disabled={true}
+                        value=""
+                      >
+                        From
+                      </option>
+                      <option
+                        value={0}
+                      >
+                        0
+                      </option>
+                      <option
+                        value={1}
+                      >
+                        1
+                      </option>
+                      <option
+                        value={2}
+                      >
+                        2
+                      </option>
+                      <option
+                        value={3}
+                      >
+                        3
+                      </option>
+                      <option
+                        value={4}
+                      >
+                        4
+                      </option>
+                      <option
+                        value={5}
+                      >
+                        5
+                      </option>
+                      <option
+                        value={6}
+                      >
+                        6
+                      </option>
+                      <option
+                        value={7}
+                      >
+                        7
+                      </option>
+                      <option
+                        value={8}
+                      >
+                        8
+                      </option>
+                      <option
+                        value={9}
+                      >
+                        9
+                      </option>
+                      <option
+                        value={10}
+                      >
+                        10
+                      </option>
+                      <option
+                        value={11}
+                      >
+                        11
+                      </option>
+                    </WithStyles(WithFormControlContext(NativeSelect))>
+                    <WithStyles(WithFormControlContext(FormHelperText))>
+                      From
+                    </WithStyles(WithFormControlContext(FormHelperText))>
+                  </WithStyles(FormControl)>
+                  <WithStyles(FormControl)
+                    className="foo"
+                  >
+                    <WithStyles(WithFormControlContext(NativeSelect))
+                      name="age"
+                      onChange={[Function]}
+                    >
+                      <option
+                        disabled={true}
+                        value=""
+                      >
+                        To
+                      </option>
+                      <option
+                        value={0}
+                      >
+                        0
+                      </option>
+                      <option
+                        value={1}
+                      >
+                        1
+                      </option>
+                      <option
+                        value={2}
+                      >
+                        2
+                      </option>
+                      <option
+                        value={3}
+                      >
+                        3
+                      </option>
+                      <option
+                        value={4}
+                      >
+                        4
+                      </option>
+                      <option
+                        value={5}
+                      >
+                        5
+                      </option>
+                      <option
+                        value={6}
+                      >
+                        6
+                      </option>
+                      <option
+                        value={7}
+                      >
+                        7
+                      </option>
+                      <option
+                        value={8}
+                      >
+                        8
+                      </option>
+                      <option
+                        value={9}
+                      >
+                        9
+                      </option>
+                      <option
+                        value={10}
+                      >
+                        10
+                      </option>
+                      <option
+                        value={11}
+                      >
+                        11
+                      </option>
+                    </WithStyles(WithFormControlContext(NativeSelect))>
+                    <WithStyles(WithFormControlContext(FormHelperText))>
+                      To
+                    </WithStyles(WithFormControlContext(FormHelperText))>
+                  </WithStyles(FormControl)>
+                </div>
+              </div>
+              <UserInput
+                handleInputs={[Function]}
+                name="activityWebpage"
+                placeholder="eg http://google.com/FredsSoftPlay/event/1894"
+                subtitle="Activity Webpage"
+                subtitleSmall="Use a specific page if possible. Try to avoid homepage links."
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="activityPhoneNumber"
+                placeholder="eg +44 07123 123 123"
+                subtitle="Activity Phone Number"
+                subtitleSmall="optional"
+              />
+            </div>
+          </div>,
+          <div
+            className="footer"
+          >
+            <WithStyles(Button)
+              onClick={null}
+              variant="contained"
+            >
+              <Link
+                replace={false}
+                to="/"
+              >
+                Back
+              </Link>
+            </WithStyles(Button)>
+            <WithStyles(Button)
+              onClick={[Function]}
+              variant="contained"
+            >
+              <Link
+                replace={false}
+                to="/venue"
+              >
+                Next
+              </Link>
+            </WithStyles(Button)>
+          </div>,
+        ],
+        "className": "homepage",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Header />,
+              <div
+                className="main-body"
+              >
+                <h1
+                  className="title"
+                >
+                  About Your Activity
+                </h1>
+                <UserInput
+                  handleInputs={[Function]}
+                  name="activityName"
+                  placeholder="eg Franks SoftPlay Rave!"
+                  subtitle="Activity Name"
+                />
+                <div
+                  className="each-input-container"
+                >
+                  <h4
+                    className="sub-title"
+                  >
+                    Recommended Age
+                  </h4>
+                  <div
+                    className="age-selectors-container"
+                  >
+                    <WithStyles(FormControl)
+                      className="foo"
+                    >
+                      <WithStyles(WithFormControlContext(NativeSelect))
+                        name="age"
+                        onChange={[Function]}
+                      >
+                        <option
+                          disabled={true}
+                          value=""
+                        >
+                          From
+                        </option>
+                        <option
+                          value={0}
+                        >
+                          0
+                        </option>
+                        <option
+                          value={1}
+                        >
+                          1
+                        </option>
+                        <option
+                          value={2}
+                        >
+                          2
+                        </option>
+                        <option
+                          value={3}
+                        >
+                          3
+                        </option>
+                        <option
+                          value={4}
+                        >
+                          4
+                        </option>
+                        <option
+                          value={5}
+                        >
+                          5
+                        </option>
+                        <option
+                          value={6}
+                        >
+                          6
+                        </option>
+                        <option
+                          value={7}
+                        >
+                          7
+                        </option>
+                        <option
+                          value={8}
+                        >
+                          8
+                        </option>
+                        <option
+                          value={9}
+                        >
+                          9
+                        </option>
+                        <option
+                          value={10}
+                        >
+                          10
+                        </option>
+                        <option
+                          value={11}
+                        >
+                          11
+                        </option>
+                      </WithStyles(WithFormControlContext(NativeSelect))>
+                      <WithStyles(WithFormControlContext(FormHelperText))>
+                        From
+                      </WithStyles(WithFormControlContext(FormHelperText))>
+                    </WithStyles(FormControl)>
+                    <WithStyles(FormControl)
+                      className="foo"
+                    >
+                      <WithStyles(WithFormControlContext(NativeSelect))
+                        name="age"
+                        onChange={[Function]}
+                      >
+                        <option
+                          disabled={true}
+                          value=""
+                        >
+                          To
+                        </option>
+                        <option
+                          value={0}
+                        >
+                          0
+                        </option>
+                        <option
+                          value={1}
+                        >
+                          1
+                        </option>
+                        <option
+                          value={2}
+                        >
+                          2
+                        </option>
+                        <option
+                          value={3}
+                        >
+                          3
+                        </option>
+                        <option
+                          value={4}
+                        >
+                          4
+                        </option>
+                        <option
+                          value={5}
+                        >
+                          5
+                        </option>
+                        <option
+                          value={6}
+                        >
+                          6
+                        </option>
+                        <option
+                          value={7}
+                        >
+                          7
+                        </option>
+                        <option
+                          value={8}
+                        >
+                          8
+                        </option>
+                        <option
+                          value={9}
+                        >
+                          9
+                        </option>
+                        <option
+                          value={10}
+                        >
+                          10
+                        </option>
+                        <option
+                          value={11}
+                        >
+                          11
+                        </option>
+                      </WithStyles(WithFormControlContext(NativeSelect))>
+                      <WithStyles(WithFormControlContext(FormHelperText))>
+                        To
+                      </WithStyles(WithFormControlContext(FormHelperText))>
+                    </WithStyles(FormControl)>
+                  </div>
+                </div>
+                <UserInput
+                  handleInputs={[Function]}
+                  name="activityWebpage"
+                  placeholder="eg http://google.com/FredsSoftPlay/event/1894"
+                  subtitle="Activity Webpage"
+                  subtitleSmall="Use a specific page if possible. Try to avoid homepage links."
+                />
+                <UserInput
+                  handleInputs={[Function]}
+                  name="activityPhoneNumber"
+                  placeholder="eg +44 07123 123 123"
+                  subtitle="Activity Phone Number"
+                  subtitleSmall="optional"
+                />
+              </div>,
+            ],
+            "className": "content-card",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1
+                    className="title"
+                  >
+                    About Your Activity
+                  </h1>,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="activityName"
+                    placeholder="eg Franks SoftPlay Rave!"
+                    subtitle="Activity Name"
+                  />,
+                  <div
+                    className="each-input-container"
+                  >
+                    <h4
+                      className="sub-title"
+                    >
+                      Recommended Age
+                    </h4>
+                    <div
+                      className="age-selectors-container"
+                    >
+                      <WithStyles(FormControl)
+                        className="foo"
+                      >
+                        <WithStyles(WithFormControlContext(NativeSelect))
+                          name="age"
+                          onChange={[Function]}
+                        >
+                          <option
+                            disabled={true}
+                            value=""
+                          >
+                            From
+                          </option>
+                          <option
+                            value={0}
+                          >
+                            0
+                          </option>
+                          <option
+                            value={1}
+                          >
+                            1
+                          </option>
+                          <option
+                            value={2}
+                          >
+                            2
+                          </option>
+                          <option
+                            value={3}
+                          >
+                            3
+                          </option>
+                          <option
+                            value={4}
+                          >
+                            4
+                          </option>
+                          <option
+                            value={5}
+                          >
+                            5
+                          </option>
+                          <option
+                            value={6}
+                          >
+                            6
+                          </option>
+                          <option
+                            value={7}
+                          >
+                            7
+                          </option>
+                          <option
+                            value={8}
+                          >
+                            8
+                          </option>
+                          <option
+                            value={9}
+                          >
+                            9
+                          </option>
+                          <option
+                            value={10}
+                          >
+                            10
+                          </option>
+                          <option
+                            value={11}
+                          >
+                            11
+                          </option>
+                        </WithStyles(WithFormControlContext(NativeSelect))>
+                        <WithStyles(WithFormControlContext(FormHelperText))>
+                          From
+                        </WithStyles(WithFormControlContext(FormHelperText))>
+                      </WithStyles(FormControl)>
+                      <WithStyles(FormControl)
+                        className="foo"
+                      >
+                        <WithStyles(WithFormControlContext(NativeSelect))
+                          name="age"
+                          onChange={[Function]}
+                        >
+                          <option
+                            disabled={true}
+                            value=""
+                          >
+                            To
+                          </option>
+                          <option
+                            value={0}
+                          >
+                            0
+                          </option>
+                          <option
+                            value={1}
+                          >
+                            1
+                          </option>
+                          <option
+                            value={2}
+                          >
+                            2
+                          </option>
+                          <option
+                            value={3}
+                          >
+                            3
+                          </option>
+                          <option
+                            value={4}
+                          >
+                            4
+                          </option>
+                          <option
+                            value={5}
+                          >
+                            5
+                          </option>
+                          <option
+                            value={6}
+                          >
+                            6
+                          </option>
+                          <option
+                            value={7}
+                          >
+                            7
+                          </option>
+                          <option
+                            value={8}
+                          >
+                            8
+                          </option>
+                          <option
+                            value={9}
+                          >
+                            9
+                          </option>
+                          <option
+                            value={10}
+                          >
+                            10
+                          </option>
+                          <option
+                            value={11}
+                          >
+                            11
+                          </option>
+                        </WithStyles(WithFormControlContext(NativeSelect))>
+                        <WithStyles(WithFormControlContext(FormHelperText))>
+                          To
+                        </WithStyles(WithFormControlContext(FormHelperText))>
+                      </WithStyles(FormControl)>
+                    </div>
+                  </div>,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="activityWebpage"
+                    placeholder="eg http://google.com/FredsSoftPlay/event/1894"
+                    subtitle="Activity Webpage"
+                    subtitleSmall="Use a specific page if possible. Try to avoid homepage links."
+                  />,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="activityPhoneNumber"
+                    placeholder="eg +44 07123 123 123"
+                    subtitle="Activity Phone Number"
+                    subtitleSmall="optional"
+                  />,
+                ],
+                "className": "main-body",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "About Your Activity",
+                    "className": "title",
+                  },
+                  "ref": null,
+                  "rendered": "About Your Activity",
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "activityName",
+                    "placeholder": "eg Franks SoftPlay Rave!",
+                    "subtitle": "Activity Name",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <h4
+                        className="sub-title"
+                      >
+                        Recommended Age
+                      </h4>,
+                      <div
+                        className="age-selectors-container"
+                      >
+                        <WithStyles(FormControl)
+                          className="foo"
+                        >
+                          <WithStyles(WithFormControlContext(NativeSelect))
+                            name="age"
+                            onChange={[Function]}
+                          >
+                            <option
+                              disabled={true}
+                              value=""
+                            >
+                              From
+                            </option>
+                            <option
+                              value={0}
+                            >
+                              0
+                            </option>
+                            <option
+                              value={1}
+                            >
+                              1
+                            </option>
+                            <option
+                              value={2}
+                            >
+                              2
+                            </option>
+                            <option
+                              value={3}
+                            >
+                              3
+                            </option>
+                            <option
+                              value={4}
+                            >
+                              4
+                            </option>
+                            <option
+                              value={5}
+                            >
+                              5
+                            </option>
+                            <option
+                              value={6}
+                            >
+                              6
+                            </option>
+                            <option
+                              value={7}
+                            >
+                              7
+                            </option>
+                            <option
+                              value={8}
+                            >
+                              8
+                            </option>
+                            <option
+                              value={9}
+                            >
+                              9
+                            </option>
+                            <option
+                              value={10}
+                            >
+                              10
+                            </option>
+                            <option
+                              value={11}
+                            >
+                              11
+                            </option>
+                          </WithStyles(WithFormControlContext(NativeSelect))>
+                          <WithStyles(WithFormControlContext(FormHelperText))>
+                            From
+                          </WithStyles(WithFormControlContext(FormHelperText))>
+                        </WithStyles(FormControl)>
+                        <WithStyles(FormControl)
+                          className="foo"
+                        >
+                          <WithStyles(WithFormControlContext(NativeSelect))
+                            name="age"
+                            onChange={[Function]}
+                          >
+                            <option
+                              disabled={true}
+                              value=""
+                            >
+                              To
+                            </option>
+                            <option
+                              value={0}
+                            >
+                              0
+                            </option>
+                            <option
+                              value={1}
+                            >
+                              1
+                            </option>
+                            <option
+                              value={2}
+                            >
+                              2
+                            </option>
+                            <option
+                              value={3}
+                            >
+                              3
+                            </option>
+                            <option
+                              value={4}
+                            >
+                              4
+                            </option>
+                            <option
+                              value={5}
+                            >
+                              5
+                            </option>
+                            <option
+                              value={6}
+                            >
+                              6
+                            </option>
+                            <option
+                              value={7}
+                            >
+                              7
+                            </option>
+                            <option
+                              value={8}
+                            >
+                              8
+                            </option>
+                            <option
+                              value={9}
+                            >
+                              9
+                            </option>
+                            <option
+                              value={10}
+                            >
+                              10
+                            </option>
+                            <option
+                              value={11}
+                            >
+                              11
+                            </option>
+                          </WithStyles(WithFormControlContext(NativeSelect))>
+                          <WithStyles(WithFormControlContext(FormHelperText))>
+                            To
+                          </WithStyles(WithFormControlContext(FormHelperText))>
+                        </WithStyles(FormControl)>
+                      </div>,
+                    ],
+                    "className": "each-input-container",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Recommended Age",
+                        "className": "sub-title",
+                      },
+                      "ref": null,
+                      "rendered": "Recommended Age",
+                      "type": "h4",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <WithStyles(FormControl)
+                            className="foo"
+                          >
+                            <WithStyles(WithFormControlContext(NativeSelect))
+                              name="age"
+                              onChange={[Function]}
+                            >
+                              <option
+                                disabled={true}
+                                value=""
+                              >
+                                From
+                              </option>
+                              <option
+                                value={0}
+                              >
+                                0
+                              </option>
+                              <option
+                                value={1}
+                              >
+                                1
+                              </option>
+                              <option
+                                value={2}
+                              >
+                                2
+                              </option>
+                              <option
+                                value={3}
+                              >
+                                3
+                              </option>
+                              <option
+                                value={4}
+                              >
+                                4
+                              </option>
+                              <option
+                                value={5}
+                              >
+                                5
+                              </option>
+                              <option
+                                value={6}
+                              >
+                                6
+                              </option>
+                              <option
+                                value={7}
+                              >
+                                7
+                              </option>
+                              <option
+                                value={8}
+                              >
+                                8
+                              </option>
+                              <option
+                                value={9}
+                              >
+                                9
+                              </option>
+                              <option
+                                value={10}
+                              >
+                                10
+                              </option>
+                              <option
+                                value={11}
+                              >
+                                11
+                              </option>
+                            </WithStyles(WithFormControlContext(NativeSelect))>
+                            <WithStyles(WithFormControlContext(FormHelperText))>
+                              From
+                            </WithStyles(WithFormControlContext(FormHelperText))>
+                          </WithStyles(FormControl)>,
+                          <WithStyles(FormControl)
+                            className="foo"
+                          >
+                            <WithStyles(WithFormControlContext(NativeSelect))
+                              name="age"
+                              onChange={[Function]}
+                            >
+                              <option
+                                disabled={true}
+                                value=""
+                              >
+                                To
+                              </option>
+                              <option
+                                value={0}
+                              >
+                                0
+                              </option>
+                              <option
+                                value={1}
+                              >
+                                1
+                              </option>
+                              <option
+                                value={2}
+                              >
+                                2
+                              </option>
+                              <option
+                                value={3}
+                              >
+                                3
+                              </option>
+                              <option
+                                value={4}
+                              >
+                                4
+                              </option>
+                              <option
+                                value={5}
+                              >
+                                5
+                              </option>
+                              <option
+                                value={6}
+                              >
+                                6
+                              </option>
+                              <option
+                                value={7}
+                              >
+                                7
+                              </option>
+                              <option
+                                value={8}
+                              >
+                                8
+                              </option>
+                              <option
+                                value={9}
+                              >
+                                9
+                              </option>
+                              <option
+                                value={10}
+                              >
+                                10
+                              </option>
+                              <option
+                                value={11}
+                              >
+                                11
+                              </option>
+                            </WithStyles(WithFormControlContext(NativeSelect))>
+                            <WithStyles(WithFormControlContext(FormHelperText))>
+                              To
+                            </WithStyles(WithFormControlContext(FormHelperText))>
+                          </WithStyles(FormControl)>,
+                        ],
+                        "className": "age-selectors-container",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              <WithStyles(WithFormControlContext(NativeSelect))
+                                name="age"
+                                onChange={[Function]}
+                              >
+                                <option
+                                  disabled={true}
+                                  value=""
+                                >
+                                  From
+                                </option>
+                                <option
+                                  value={0}
+                                >
+                                  0
+                                </option>
+                                <option
+                                  value={1}
+                                >
+                                  1
+                                </option>
+                                <option
+                                  value={2}
+                                >
+                                  2
+                                </option>
+                                <option
+                                  value={3}
+                                >
+                                  3
+                                </option>
+                                <option
+                                  value={4}
+                                >
+                                  4
+                                </option>
+                                <option
+                                  value={5}
+                                >
+                                  5
+                                </option>
+                                <option
+                                  value={6}
+                                >
+                                  6
+                                </option>
+                                <option
+                                  value={7}
+                                >
+                                  7
+                                </option>
+                                <option
+                                  value={8}
+                                >
+                                  8
+                                </option>
+                                <option
+                                  value={9}
+                                >
+                                  9
+                                </option>
+                                <option
+                                  value={10}
+                                >
+                                  10
+                                </option>
+                                <option
+                                  value={11}
+                                >
+                                  11
+                                </option>
+                              </WithStyles(WithFormControlContext(NativeSelect))>,
+                              <WithStyles(WithFormControlContext(FormHelperText))>
+                                From
+                              </WithStyles(WithFormControlContext(FormHelperText))>,
+                            ],
+                            "className": "foo",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": Array [
+                                  <option
+                                    disabled={true}
+                                    value=""
+                                  >
+                                    From
+                                  </option>,
+                                  Array [
+                                    <option
+                                      value={0}
+                                    >
+                                      0
+                                    </option>,
+                                    <option
+                                      value={1}
+                                    >
+                                      1
+                                    </option>,
+                                    <option
+                                      value={2}
+                                    >
+                                      2
+                                    </option>,
+                                    <option
+                                      value={3}
+                                    >
+                                      3
+                                    </option>,
+                                    <option
+                                      value={4}
+                                    >
+                                      4
+                                    </option>,
+                                    <option
+                                      value={5}
+                                    >
+                                      5
+                                    </option>,
+                                    <option
+                                      value={6}
+                                    >
+                                      6
+                                    </option>,
+                                    <option
+                                      value={7}
+                                    >
+                                      7
+                                    </option>,
+                                    <option
+                                      value={8}
+                                    >
+                                      8
+                                    </option>,
+                                    <option
+                                      value={9}
+                                    >
+                                      9
+                                    </option>,
+                                    <option
+                                      value={10}
+                                    >
+                                      10
+                                    </option>,
+                                    <option
+                                      value={11}
+                                    >
+                                      11
+                                    </option>,
+                                  ],
+                                ],
+                                "className": undefined,
+                                "name": "age",
+                                "onChange": [Function],
+                                "value": undefined,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "From",
+                                    "disabled": true,
+                                    "value": "",
+                                  },
+                                  "ref": null,
+                                  "rendered": "From",
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "0",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 0,
+                                    "value": 0,
+                                  },
+                                  "ref": null,
+                                  "rendered": 0,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "1",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 1,
+                                    "value": 1,
+                                  },
+                                  "ref": null,
+                                  "rendered": 1,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "2",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 2,
+                                    "value": 2,
+                                  },
+                                  "ref": null,
+                                  "rendered": 2,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "3",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 3,
+                                    "value": 3,
+                                  },
+                                  "ref": null,
+                                  "rendered": 3,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "4",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 4,
+                                    "value": 4,
+                                  },
+                                  "ref": null,
+                                  "rendered": 4,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "5",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 5,
+                                    "value": 5,
+                                  },
+                                  "ref": null,
+                                  "rendered": 5,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "6",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 6,
+                                    "value": 6,
+                                  },
+                                  "ref": null,
+                                  "rendered": 6,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "7",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 7,
+                                    "value": 7,
+                                  },
+                                  "ref": null,
+                                  "rendered": 7,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "8",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 8,
+                                    "value": 8,
+                                  },
+                                  "ref": null,
+                                  "rendered": 8,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "9",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 9,
+                                    "value": 9,
+                                  },
+                                  "ref": null,
+                                  "rendered": 9,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "10",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 10,
+                                    "value": 10,
+                                  },
+                                  "ref": null,
+                                  "rendered": 10,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "11",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 11,
+                                    "value": 11,
+                                  },
+                                  "ref": null,
+                                  "rendered": 11,
+                                  "type": "option",
+                                },
+                              ],
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": "From",
+                              },
+                              "ref": null,
+                              "rendered": "From",
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "children": Array [
+                              <WithStyles(WithFormControlContext(NativeSelect))
+                                name="age"
+                                onChange={[Function]}
+                              >
+                                <option
+                                  disabled={true}
+                                  value=""
+                                >
+                                  To
+                                </option>
+                                <option
+                                  value={0}
+                                >
+                                  0
+                                </option>
+                                <option
+                                  value={1}
+                                >
+                                  1
+                                </option>
+                                <option
+                                  value={2}
+                                >
+                                  2
+                                </option>
+                                <option
+                                  value={3}
+                                >
+                                  3
+                                </option>
+                                <option
+                                  value={4}
+                                >
+                                  4
+                                </option>
+                                <option
+                                  value={5}
+                                >
+                                  5
+                                </option>
+                                <option
+                                  value={6}
+                                >
+                                  6
+                                </option>
+                                <option
+                                  value={7}
+                                >
+                                  7
+                                </option>
+                                <option
+                                  value={8}
+                                >
+                                  8
+                                </option>
+                                <option
+                                  value={9}
+                                >
+                                  9
+                                </option>
+                                <option
+                                  value={10}
+                                >
+                                  10
+                                </option>
+                                <option
+                                  value={11}
+                                >
+                                  11
+                                </option>
+                              </WithStyles(WithFormControlContext(NativeSelect))>,
+                              <WithStyles(WithFormControlContext(FormHelperText))>
+                                To
+                              </WithStyles(WithFormControlContext(FormHelperText))>,
+                            ],
+                            "className": "foo",
+                          },
+                          "ref": null,
+                          "rendered": Array [
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": Array [
+                                  <option
+                                    disabled={true}
+                                    value=""
+                                  >
+                                    To
+                                  </option>,
+                                  Array [
+                                    <option
+                                      value={0}
+                                    >
+                                      0
+                                    </option>,
+                                    <option
+                                      value={1}
+                                    >
+                                      1
+                                    </option>,
+                                    <option
+                                      value={2}
+                                    >
+                                      2
+                                    </option>,
+                                    <option
+                                      value={3}
+                                    >
+                                      3
+                                    </option>,
+                                    <option
+                                      value={4}
+                                    >
+                                      4
+                                    </option>,
+                                    <option
+                                      value={5}
+                                    >
+                                      5
+                                    </option>,
+                                    <option
+                                      value={6}
+                                    >
+                                      6
+                                    </option>,
+                                    <option
+                                      value={7}
+                                    >
+                                      7
+                                    </option>,
+                                    <option
+                                      value={8}
+                                    >
+                                      8
+                                    </option>,
+                                    <option
+                                      value={9}
+                                    >
+                                      9
+                                    </option>,
+                                    <option
+                                      value={10}
+                                    >
+                                      10
+                                    </option>,
+                                    <option
+                                      value={11}
+                                    >
+                                      11
+                                    </option>,
+                                  ],
+                                ],
+                                "className": undefined,
+                                "name": "age",
+                                "onChange": [Function],
+                                "value": undefined,
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                Object {
+                                  "instance": null,
+                                  "key": undefined,
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": "To",
+                                    "disabled": true,
+                                    "value": "",
+                                  },
+                                  "ref": null,
+                                  "rendered": "To",
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "0",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 0,
+                                    "value": 0,
+                                  },
+                                  "ref": null,
+                                  "rendered": 0,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "1",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 1,
+                                    "value": 1,
+                                  },
+                                  "ref": null,
+                                  "rendered": 1,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "2",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 2,
+                                    "value": 2,
+                                  },
+                                  "ref": null,
+                                  "rendered": 2,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "3",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 3,
+                                    "value": 3,
+                                  },
+                                  "ref": null,
+                                  "rendered": 3,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "4",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 4,
+                                    "value": 4,
+                                  },
+                                  "ref": null,
+                                  "rendered": 4,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "5",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 5,
+                                    "value": 5,
+                                  },
+                                  "ref": null,
+                                  "rendered": 5,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "6",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 6,
+                                    "value": 6,
+                                  },
+                                  "ref": null,
+                                  "rendered": 6,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "7",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 7,
+                                    "value": 7,
+                                  },
+                                  "ref": null,
+                                  "rendered": 7,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "8",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 8,
+                                    "value": 8,
+                                  },
+                                  "ref": null,
+                                  "rendered": 8,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "9",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 9,
+                                    "value": 9,
+                                  },
+                                  "ref": null,
+                                  "rendered": 9,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "10",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 10,
+                                    "value": 10,
+                                  },
+                                  "ref": null,
+                                  "rendered": 10,
+                                  "type": "option",
+                                },
+                                Object {
+                                  "instance": null,
+                                  "key": "11",
+                                  "nodeType": "host",
+                                  "props": Object {
+                                    "children": 11,
+                                    "value": 11,
+                                  },
+                                  "ref": null,
+                                  "rendered": 11,
+                                  "type": "option",
+                                },
+                              ],
+                              "type": [Function],
+                            },
+                            Object {
+                              "instance": null,
+                              "key": undefined,
+                              "nodeType": "class",
+                              "props": Object {
+                                "children": "To",
+                              },
+                              "ref": null,
+                              "rendered": "To",
+                              "type": [Function],
+                            },
+                          ],
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "div",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "activityWebpage",
+                    "placeholder": "eg http://google.com/FredsSoftPlay/event/1894",
+                    "subtitle": "Activity Webpage",
+                    "subtitleSmall": "Use a specific page if possible. Try to avoid homepage links.",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "activityPhoneNumber",
+                    "placeholder": "eg +44 07123 123 123",
+                    "subtitle": "Activity Phone Number",
+                    "subtitleSmall": "optional",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Button)
+                onClick={null}
+                variant="contained"
+              >
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  Back
+                </Link>
+              </WithStyles(Button)>,
+              <WithStyles(Button)
+                onClick={[Function]}
+                variant="contained"
+              >
+                <Link
+                  replace={false}
+                  to="/venue"
+                >
+                  Next
+                </Link>
+              </WithStyles(Button)>,
+            ],
+            "className": "footer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/"
+                >
+                  Back
+                </Link>,
+                "onClick": null,
+                "variant": "contained",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Back",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Back",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/venue"
+                >
+                  Next
+                </Link>,
+                "onClick": [Function],
+                "variant": "contained",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Next",
+                  "replace": false,
+                  "to": "/venue",
+                },
+                "ref": null,
+                "rendered": "Next",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App 💻 Venue Screen should render the VenueScreen without exploding... 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <VenueScreen
+    activityData={Array []}
+    addresses={Array []}
+    classes={
+      Object {
+        "formControl": "foo",
+      }
+    }
+    error={null}
+    isLoading={false}
+    pageLoading={[Function]}
+    saveActivityData={[Function]}
+    updateStateUserIsInputtingData={[Function]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="content-card"
+        >
+          <Header />
+          <div
+            className="main-body"
+          >
+            <h1
+              className="title"
+            >
+              Add The Address
+            </h1>
+            <WithStyles(Button)
+              color="primary"
+              onClick={null}
+              variant="contained"
+            >
+              Copy from existing activity
+            </WithStyles(Button)>
+            <UserInput
+              handleInputs={[Function]}
+              name="placeName"
+              placeholder="e.g. Frank's Soft Play!"
+              subtitle="Place Name"
+            />
+            <UserInput
+              handleInputs={[Function]}
+              name="postcode"
+              placeholder="e.g. SE1 6TY"
+              subtitle="Postcode"
+            />
+            <UserInput
+              handleInputs={[Function]}
+              name="buildingUnit"
+              placeholder="e.g. Unit 4b"
+              subtitle="Building Unit"
+              subtitleSmall="optional"
+            />
+            <UserInput
+              handleInputs={[Function]}
+              name="buildingName"
+              placeholder="e.g. Wallis House"
+              subtitle="Building Name"
+              subtitleSmall="optional"
+            />
+            <UserInput
+              handleInputs={[Function]}
+              name="streetNumber"
+              placeholder="e.g. 21"
+              subtitle="Street Number"
+            />
+            <UserInput
+              handleInputs={[Function]}
+              name="streetName"
+              placeholder="e.g. Cordle Street"
+              subtitle="Street Name"
+            />
+            <UserInput
+              handleInputs={[Function]}
+              name="town"
+              placeholder="e.g. Maidenhead"
+              subtitle="Town"
+            />
+          </div>
+        </div>,
+        <div
+          className="footer"
+        >
+          <WithStyles(Button)
+            onClick={null}
+            variant="contained"
+          >
+            <Link
+              replace={false}
+              to="/"
+            >
+              Back
+            </Link>
+          </WithStyles(Button)>
+          <WithStyles(Button)
+            onClick={[Function]}
+            variant="contained"
+          >
+            Next
+          </WithStyles(Button)>
+        </div>,
+      ],
+      "className": "homepage",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Header />,
+            <div
+              className="main-body"
+            >
+              <h1
+                className="title"
+              >
+                Add The Address
+              </h1>
+              <WithStyles(Button)
+                color="primary"
+                onClick={null}
+                variant="contained"
+              >
+                Copy from existing activity
+              </WithStyles(Button)>
+              <UserInput
+                handleInputs={[Function]}
+                name="placeName"
+                placeholder="e.g. Frank's Soft Play!"
+                subtitle="Place Name"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="postcode"
+                placeholder="e.g. SE1 6TY"
+                subtitle="Postcode"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="buildingUnit"
+                placeholder="e.g. Unit 4b"
+                subtitle="Building Unit"
+                subtitleSmall="optional"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="buildingName"
+                placeholder="e.g. Wallis House"
+                subtitle="Building Name"
+                subtitleSmall="optional"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="streetNumber"
+                placeholder="e.g. 21"
+                subtitle="Street Number"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="streetName"
+                placeholder="e.g. Cordle Street"
+                subtitle="Street Name"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="town"
+                placeholder="e.g. Maidenhead"
+                subtitle="Town"
+              />
+            </div>,
+          ],
+          "className": "content-card",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1
+                  className="title"
+                >
+                  Add The Address
+                </h1>,
+                <WithStyles(Button)
+                  color="primary"
+                  onClick={null}
+                  variant="contained"
+                >
+                  Copy from existing activity
+                </WithStyles(Button)>,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="placeName"
+                  placeholder="e.g. Frank's Soft Play!"
+                  subtitle="Place Name"
+                />,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="postcode"
+                  placeholder="e.g. SE1 6TY"
+                  subtitle="Postcode"
+                />,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="buildingUnit"
+                  placeholder="e.g. Unit 4b"
+                  subtitle="Building Unit"
+                  subtitleSmall="optional"
+                />,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="buildingName"
+                  placeholder="e.g. Wallis House"
+                  subtitle="Building Name"
+                  subtitleSmall="optional"
+                />,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="streetNumber"
+                  placeholder="e.g. 21"
+                  subtitle="Street Number"
+                />,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="streetName"
+                  placeholder="e.g. Cordle Street"
+                  subtitle="Street Name"
+                />,
+                <UserInput
+                  handleInputs={[Function]}
+                  name="town"
+                  placeholder="e.g. Maidenhead"
+                  subtitle="Town"
+                />,
+              ],
+              "className": "main-body",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Add The Address",
+                  "className": "title",
+                },
+                "ref": null,
+                "rendered": "Add The Address",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Copy from existing activity",
+                  "className": undefined,
+                  "color": "primary",
+                  "onClick": null,
+                  "variant": "contained",
+                },
+                "ref": null,
+                "rendered": "Copy from existing activity",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "placeName",
+                  "placeholder": "e.g. Frank's Soft Play!",
+                  "subtitle": "Place Name",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "postcode",
+                  "placeholder": "e.g. SE1 6TY",
+                  "subtitle": "Postcode",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "buildingUnit",
+                  "placeholder": "e.g. Unit 4b",
+                  "subtitle": "Building Unit",
+                  "subtitleSmall": "optional",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "buildingName",
+                  "placeholder": "e.g. Wallis House",
+                  "subtitle": "Building Name",
+                  "subtitleSmall": "optional",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "streetNumber",
+                  "placeholder": "e.g. 21",
+                  "subtitle": "Street Number",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "streetName",
+                  "placeholder": "e.g. Cordle Street",
+                  "subtitle": "Street Name",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "handleInputs": [Function],
+                  "name": "town",
+                  "placeholder": "e.g. Maidenhead",
+                  "subtitle": "Town",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <WithStyles(Button)
+              onClick={null}
+              variant="contained"
+            >
+              <Link
+                replace={false}
+                to="/"
+              >
+                Back
+              </Link>
+            </WithStyles(Button)>,
+            <WithStyles(Button)
+              onClick={[Function]}
+              variant="contained"
+            >
+              Next
+            </WithStyles(Button)>,
+          ],
+          "className": "footer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/"
+              >
+                Back
+              </Link>,
+              "onClick": null,
+              "variant": "contained",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Back",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Back",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Next",
+              "onClick": [Function],
+              "variant": "contained",
+            },
+            "ref": null,
+            "rendered": "Next",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="content-card"
+          >
+            <Header />
+            <div
+              className="main-body"
+            >
+              <h1
+                className="title"
+              >
+                Add The Address
+              </h1>
+              <WithStyles(Button)
+                color="primary"
+                onClick={null}
+                variant="contained"
+              >
+                Copy from existing activity
+              </WithStyles(Button)>
+              <UserInput
+                handleInputs={[Function]}
+                name="placeName"
+                placeholder="e.g. Frank's Soft Play!"
+                subtitle="Place Name"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="postcode"
+                placeholder="e.g. SE1 6TY"
+                subtitle="Postcode"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="buildingUnit"
+                placeholder="e.g. Unit 4b"
+                subtitle="Building Unit"
+                subtitleSmall="optional"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="buildingName"
+                placeholder="e.g. Wallis House"
+                subtitle="Building Name"
+                subtitleSmall="optional"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="streetNumber"
+                placeholder="e.g. 21"
+                subtitle="Street Number"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="streetName"
+                placeholder="e.g. Cordle Street"
+                subtitle="Street Name"
+              />
+              <UserInput
+                handleInputs={[Function]}
+                name="town"
+                placeholder="e.g. Maidenhead"
+                subtitle="Town"
+              />
+            </div>
+          </div>,
+          <div
+            className="footer"
+          >
+            <WithStyles(Button)
+              onClick={null}
+              variant="contained"
+            >
+              <Link
+                replace={false}
+                to="/"
+              >
+                Back
+              </Link>
+            </WithStyles(Button)>
+            <WithStyles(Button)
+              onClick={[Function]}
+              variant="contained"
+            >
+              Next
+            </WithStyles(Button)>
+          </div>,
+        ],
+        "className": "homepage",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Header />,
+              <div
+                className="main-body"
+              >
+                <h1
+                  className="title"
+                >
+                  Add The Address
+                </h1>
+                <WithStyles(Button)
+                  color="primary"
+                  onClick={null}
+                  variant="contained"
+                >
+                  Copy from existing activity
+                </WithStyles(Button)>
+                <UserInput
+                  handleInputs={[Function]}
+                  name="placeName"
+                  placeholder="e.g. Frank's Soft Play!"
+                  subtitle="Place Name"
+                />
+                <UserInput
+                  handleInputs={[Function]}
+                  name="postcode"
+                  placeholder="e.g. SE1 6TY"
+                  subtitle="Postcode"
+                />
+                <UserInput
+                  handleInputs={[Function]}
+                  name="buildingUnit"
+                  placeholder="e.g. Unit 4b"
+                  subtitle="Building Unit"
+                  subtitleSmall="optional"
+                />
+                <UserInput
+                  handleInputs={[Function]}
+                  name="buildingName"
+                  placeholder="e.g. Wallis House"
+                  subtitle="Building Name"
+                  subtitleSmall="optional"
+                />
+                <UserInput
+                  handleInputs={[Function]}
+                  name="streetNumber"
+                  placeholder="e.g. 21"
+                  subtitle="Street Number"
+                />
+                <UserInput
+                  handleInputs={[Function]}
+                  name="streetName"
+                  placeholder="e.g. Cordle Street"
+                  subtitle="Street Name"
+                />
+                <UserInput
+                  handleInputs={[Function]}
+                  name="town"
+                  placeholder="e.g. Maidenhead"
+                  subtitle="Town"
+                />
+              </div>,
+            ],
+            "className": "content-card",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1
+                    className="title"
+                  >
+                    Add The Address
+                  </h1>,
+                  <WithStyles(Button)
+                    color="primary"
+                    onClick={null}
+                    variant="contained"
+                  >
+                    Copy from existing activity
+                  </WithStyles(Button)>,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="placeName"
+                    placeholder="e.g. Frank's Soft Play!"
+                    subtitle="Place Name"
+                  />,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="postcode"
+                    placeholder="e.g. SE1 6TY"
+                    subtitle="Postcode"
+                  />,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="buildingUnit"
+                    placeholder="e.g. Unit 4b"
+                    subtitle="Building Unit"
+                    subtitleSmall="optional"
+                  />,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="buildingName"
+                    placeholder="e.g. Wallis House"
+                    subtitle="Building Name"
+                    subtitleSmall="optional"
+                  />,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="streetNumber"
+                    placeholder="e.g. 21"
+                    subtitle="Street Number"
+                  />,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="streetName"
+                    placeholder="e.g. Cordle Street"
+                    subtitle="Street Name"
+                  />,
+                  <UserInput
+                    handleInputs={[Function]}
+                    name="town"
+                    placeholder="e.g. Maidenhead"
+                    subtitle="Town"
+                  />,
+                ],
+                "className": "main-body",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Add The Address",
+                    "className": "title",
+                  },
+                  "ref": null,
+                  "rendered": "Add The Address",
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Copy from existing activity",
+                    "className": undefined,
+                    "color": "primary",
+                    "onClick": null,
+                    "variant": "contained",
+                  },
+                  "ref": null,
+                  "rendered": "Copy from existing activity",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "placeName",
+                    "placeholder": "e.g. Frank's Soft Play!",
+                    "subtitle": "Place Name",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "postcode",
+                    "placeholder": "e.g. SE1 6TY",
+                    "subtitle": "Postcode",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "buildingUnit",
+                    "placeholder": "e.g. Unit 4b",
+                    "subtitle": "Building Unit",
+                    "subtitleSmall": "optional",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "buildingName",
+                    "placeholder": "e.g. Wallis House",
+                    "subtitle": "Building Name",
+                    "subtitleSmall": "optional",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "streetNumber",
+                    "placeholder": "e.g. 21",
+                    "subtitle": "Street Number",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "streetName",
+                    "placeholder": "e.g. Cordle Street",
+                    "subtitle": "Street Name",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "handleInputs": [Function],
+                    "name": "town",
+                    "placeholder": "e.g. Maidenhead",
+                    "subtitle": "Town",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Button)
+                onClick={null}
+                variant="contained"
+              >
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  Back
+                </Link>
+              </WithStyles(Button)>,
+              <WithStyles(Button)
+                onClick={[Function]}
+                variant="contained"
+              >
+                Next
+              </WithStyles(Button)>,
+            ],
+            "className": "footer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/"
+                >
+                  Back
+                </Link>,
+                "onClick": null,
+                "variant": "contained",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Back",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Back",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Next",
+                "onClick": [Function],
+                "variant": "contained",
+              },
+              "ref": null,
+              "rendered": "Next",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

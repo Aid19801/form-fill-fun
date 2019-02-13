@@ -20,7 +20,7 @@ import styles from './material-styles';
 import './styles.css';
 
 
-class ActivityScreen extends Component {
+export class ActivityScreen extends Component {
 
   constructor(props) {
     super(props)

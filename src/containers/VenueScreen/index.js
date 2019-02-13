@@ -13,7 +13,7 @@ import { UserInput, Header } from '../../components';
 import styles from './material-styles';
 import './styles.css';
 
-class VenueScreen extends Component {
+export class VenueScreen extends Component {
 
   constructor(props) {
     super(props)
